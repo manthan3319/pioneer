@@ -1,5 +1,6 @@
 import React from "react";
 import Title from "../Function/Function";
+import { motion } from "framer-motion";
 import { belzona, cpatsman_service, firepotected, industrialpainting, painting_coating } from "../../images/Images";
 
 const services = [
@@ -39,21 +40,28 @@ const Home_Services = () => {
   return (
     <div className="bg-black md:mt-[80px] md:py-[30px]">
       <div className="lg:max-w-[1440px] m-auto">
-        <div>
-          <Title title="Our Service Portfolio" subtitle="Full-Spectrum <br>Industrial Support" subtitleColor="white"/>
+        <div className="text-center">
+          <Title title="Our Service Portfolio" subtitle="Full-Spectrum Industrial Support" subtitleColor="white" />
         </div>
 
-        <div className="mt-[80px] flex flex-wrap gap-[28px]">
-          {services.map(service => (
-            <div key={service.id} className="md:w-[32%] bg-white rounded-[5px] shadow-lg service_card">
+        <div className="mt-[80px] flex flex-wrap gap-[28px] justify-center">
+          {services.map((service, index) => (
+            <motion.div
+              key={service.id}
+              className="md:w-[32%] bg-white rounded-[5px] shadow-lg service_card"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.2, duration: 0.5 }}
+              whileHover={{ scale: 1.05, boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)" }}
+            >
               <div>
                 <img src={service.image} className="w-[100%] rounded-t-[5px] min-h-[300px]" alt={service.title} />
               </div>
               <div className="p-[15px]">
-                <h1 className="text-customRed font-poppins md:text-[25px] font-medium mb-[5px]">{service.title}</h1>
-                <p className="text-[17px] font-poppins" dangerouslySetInnerHTML={{ __html: service.description }} />
+                <h1 className="text-customRed font-poppins md:text-[20px] font-medium mb-[5px] text-center">{service.title}</h1>
+                {/* <p className="text-[17px] font-poppins" dangerouslySetInnerHTML={{ __html: service.description }} /> */}
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
