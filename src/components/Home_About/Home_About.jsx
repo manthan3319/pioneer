@@ -12,22 +12,37 @@ const Home_About = () => {
   });
 
   return (
-    <div className="lg:max-w-[1440px] m-auto md:mt-[80px]">
+    <div className="lg:max-w-[1440px] m-auto md:mt-[80px] px-[20px]">
       <div className="flex md:flex-row flex-col gap-[40px]">
         <div
-          className="md:w-[50%] bg-cover bg-center bg-no-repeat relative"
+          className="md:w-[50%] bg-cover bg-center bg-no-repeat relative min-w-[150px] md:block hidden"
           style={{ backgroundImage: `url(${abount_img})`, minHeight: "100%" }}
         >
           <div className="absolute bg-customRed text-center bottom-0 p-[35px] border-[10px] border-white">
             <h1 className="text-[50px] font-poppins text-white font-bold">
               {inView ? (
                 <CountUp start={0} end={13} duration={2.75} suffix="+" />
-              ) : null}
+              ) : (
+                "0+"
+              )}
             </h1>
             <p className="text-white font-poppins">Years Experience</p>
           </div>
         </div>
-        <div className="md:w-[50%] flex flex-col justify-center">
+
+        <div className="md:hidden block">
+          <div className="absolute bg-customRed text-center  p-[35px] border-[10px] border-white bottom-[-108px] left-[50px]">
+            <h1 className="text-[50px] font-poppins text-white font-bold">
+              {inView ? (
+                <CountUp start={0} end={13} duration={2.75} suffix="+" />
+              ) : (
+                "0+"
+              )}
+            </h1>
+            <p className="text-white font-poppins">Years Experience</p>
+          </div>
+        </div>
+        <div className="md:w-[50%] flex flex-col justify-center mt-[80px] md:mt-[0px]">
           <div>
             <Title
               title="About Us"
@@ -71,10 +86,9 @@ const Home_About = () => {
                 Our Esteemed Parent Company M/s. PIONEER ADHESIVES was
                 incorporated in 1995 with a vision to provide maintenance
                 products and solutions for industrial giants located in and
-                around Surat. Thanks to our valued customers for placing
-                immense faith in us, which grew our company fourfold and
-                reached a milestone to be an 18 crore company in the year
-                2012-2013.
+                around Surat. Thanks to our valued customers for placing immense
+                faith in us, which grew our company fourfold and reached a
+                milestone to be an 18 crore company in the year 2012-2013.
               </motion.p>
             </div>
           </div>

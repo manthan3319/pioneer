@@ -30,6 +30,8 @@ import gallery5 from "../images/gallery5.jpg";
 import gallery6 from "../images/gallery6.jpeg";
 import gallery7 from "../images/gallery7.jpg";
 import help from "../images/help.jpg";
+import sectionimg from "../images/sectionimg.png";
+import customer_helper from "../images/customer_helper.jpg"
 export {
      logo,
       banner_men,
@@ -62,4 +64,6 @@ export {
       gallery5,
       gallery6,
       gallery7,
-      help };
+      help,
+      sectionimg,
+      customer_helper };

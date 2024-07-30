@@ -3,6 +3,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import Copyright_Section from './components/Copyright_Section/Copyright_Section';
+import AboutUs from './components/AboutUs/AboutUs';
+import Page_Services from './components/Services/Page_Services';
+import Client from './components/Client/Client';
+import Machinery from './components/Machinery/Machinery';
+import Gallery from './components/Gallery/Gallery';
+import Contactus from './components/Contactus/Contactus';
 
 const App = () => {
   return (
@@ -10,6 +16,12 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route index element={<Home />} />
+        <Route path="about" element={<AboutUs />} />
+        <Route path="services" element={<Page_Services />} />
+        <Route path="clients" element={<Client />} />
+        <Route path="machinery" element={<Machinery />} />
+        <Route path="gallery" element={<Gallery />} />
+        <Route path="contactus" element={<Contactus />} />
       </Routes>
       <Copyright_Section/>
     </BrowserRouter>

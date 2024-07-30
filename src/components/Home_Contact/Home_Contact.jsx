@@ -4,53 +4,53 @@ import { help } from "../../images/Images";
 
 const Home_Contact = () => {
   return (
-    <div className="lg:max-w-[1440px] m-auto md:mt-[140px]">
-      <div className="flex md:flex-row items-center gap-[50px]">
-        <div className="md:w-[40%]">
+    <div className="lg:max-w-[1440px] m-auto md:mt-[140px] mt-[70px] px-[20px]">
+      <div className="flex md:flex-row items-center gap-[50px]  flex-col-reverse">
+        <div className="md:w-[40%] w-[100%] text-center md:text-left">
           <Title
             title="Get in Touch"
             subtitle="Contact Our Experts  <br>for Help"
           />
-          <div className="md:mt-[45px] flex flex-col gap-y-[15px] ">
-            <div className="flex gap-[15px] items-center">
-              <span className="text-customRed md:text-[50px]">
+          <div className="md:mt-[45px] flex flex-col gap-y-[15px] mt-[30px]">
+            <div className="md:flex gap-[15px] items-center">
+              <span className="text-customRed md:text-[50px] text-[32px]">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
               </span>
-              <p className="text-gray-500 text-[20px] font-poppins">
+              <p className="text-gray-500 md:text-[20px] font-poppins text-[17px]">
                 Pioneer Scaffolding And Painting Contractors 1004, Icon Business
                 Center, Opp Central Mall, Piplod, Surat, Gujarat 395007
               </p>
             </div>
 
-            <div className="flex gap-[15px] items-center">
-              <span className="text-customRed md:text-[40px]">
+            <div className="md:flex gap-[15px] items-center">
+              <span className="text-customRed md:text-[40px] text-[30px]">
               <i class="fa fa-phone" aria-hidden="true"></i>
               </span>
-              <p className="text-gray-500 text-[20px] font-poppins">
+              <p className="text-gray-500 md:text-[20px] font-poppins text-[17px]">
               +91 9825120450
               </p>
             </div>
 
-            <div className="flex gap-[15px] items-center">
-              <span className="text-customRed md:text-[40px]">
+            <div className="md:flex gap-[15px] items-center">
+              <span className="text-customRed md:text-[40px]  text-[25px]">
               <i class="fa fa-envelope-o" aria-hidden="true"></i>
               </span>
-              <p className="text-gray-500 text-[20px] font-poppins">
+              <p className="text-gray-500 md:text-[20px] font-poppins text-[15px]">
               pioneer.scaffoldings@rediffmail.com
               </p>
             </div>
           </div>
         </div>
 
-        <div className="md:w-[60%]">
+        <div className="md:w-[60%] w-[100%]">
           <div
-            className="relative  bg-cover bg-center bg-no-repeat py-[50px] px-[50px] "
+            className="relative  bg-cover bg-center bg-no-repeat py-[50px] md:px-[50px] px-[20px] "
             style={{
               backgroundImage: `url(${help})`,
               minHeight: "100%",
             }}
           >
-            <div className="absolute inset-0 bg-black opacity-90"></div>
+            <div className="absolute inset-0 bg-[#051932] opacity-90"></div>
 
             <div className="relative">
               <input

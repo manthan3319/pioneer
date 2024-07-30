@@ -1,6 +1,7 @@
 import React from "react";
 import Title from "../Function/Function";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import { belzona, cpatsman_service, firepotected, industrialpainting, painting_coating } from "../../images/Images";
 
 const services = [
@@ -38,34 +39,47 @@ const services = [
 
 const Home_Services = () => {
   return (
-    <div className="bg-black md:mt-[80px] md:py-[30px]">
+    <div className="md:mt-[80px] md:py-[30px] mt-[60px] px-[20px]">
       <div className="lg:max-w-[1440px] m-auto">
         <div className="text-center">
-          <Title title="Our Service Portfolio" subtitle="Full-Spectrum Industrial Support" subtitleColor="white" />
+          <Title title="Our Service Portfolio" subtitle="Full-Spectrum Industrial Support" />
         </div>
 
-        <div className="mt-[80px] flex flex-wrap gap-[28px] justify-center">
+        <div className="md:mt-[80px] flex flex-wrap gap-[28px] justify-center mt-[20px]">
           {services.map((service, index) => (
-            <motion.div
-              key={service.id}
-              className="md:w-[32%] bg-white rounded-[5px] shadow-lg service_card"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.2, duration: 0.5 }}
-              whileHover={{ scale: 1.05, boxShadow: "0 4px 20px rgba(0, 0, 0, 0.1)" }}
-            >
-              <div>
-                <img src={service.image} className="w-[100%] rounded-t-[5px] min-h-[300px]" alt={service.title} />
-              </div>
-              <div className="p-[15px]">
-                <h1 className="text-customRed font-poppins md:text-[20px] font-medium mb-[5px] text-center">{service.title}</h1>
-                {/* <p className="text-[17px] font-poppins" dangerouslySetInnerHTML={{ __html: service.description }} /> */}
-              </div>
-            </motion.div>
+            <ServiceCard key={service.id} service={service} index={index} />
           ))}
         </div>
       </div>
     </div>
+  );
+};
+
+const ServiceCard = ({ service, index }) => {
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
+
+  const variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: index * 0.2 } },
+  };
+
+  return (
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={inView ? "visible" : "hidden"}
+      variants={variants}
+      whileHover={{ scale: 1.05, boxShadow: "0 10px 20px rgba(0, 0, 0, 0.2)", transition: { duration: 0.3 } }}
+      className="md:w-[32%] sm:w-[45%] bg-white rounded-[5px] shadow-lg service_card"
+    >
+      <div>
+        <img src={service.image} className="w-[100%] rounded-t-[5px] md:min-h-[300px]" alt={service.title} />
+      </div>
+      <div className="p-[15px]">
+        <h1 className="text-customRed font-poppins md:text-[20px] font-bold mb-[5px] text-center">{service.title}</h1>
+        {/* <p className="text-gray-500 font-poppins text-[17px]" dangerouslySetInnerHTML={{ __html: service.description }} /> */}
+      </div>
+    </motion.div>
   );
 };
 

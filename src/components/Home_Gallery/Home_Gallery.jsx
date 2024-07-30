@@ -16,14 +16,14 @@ const galleryItems = [
 
 const Home_Gallery = () => {
   return (
-    <div className="lg:max-w-[1440px] m-auto md:mt-[80px]">
+    <div className="lg:max-w-[1440px] m-auto md:mt-[80px] mt-[30px] px-[20px]">
       <div className="text-center">
-        <h1 className="border-b-[2px] inline-block border-customRed pb-[5px]">
+        <h1 className="border-b-[2px] inline-block border-customRed pb-[5px] ">
           <Title subtitle="Gallery" />
         </h1>
       </div>
 
-      <div className="md:mt-[50px] flex flex-wrap gap-[20px] justify-center">
+      <div className="md:mt-[50px] flex flex-wrap gap-[20px] justify-center mt-[30px]">
         {galleryItems.map((item, index) => (
           <GalleryCard key={item.id} item={item} index={index} />
         ))}
@@ -46,7 +46,7 @@ const GalleryCard = ({ item, index }) => {
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
       variants={variants}
-      className="w-[25%] bg-white rounded-lg overflow-hidden shadow-lg"
+      className="md:w-[25%] sm:w-[45%] bg-white rounded-lg overflow-hidden shadow-lg w-[100%]"
     >
       <div>
         <img src={item.image} alt={item.title} className="w-full h-[200px] object-cover" />

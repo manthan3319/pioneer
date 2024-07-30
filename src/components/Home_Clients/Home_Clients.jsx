@@ -69,8 +69,8 @@ const Home_Clients = () => {
   ];
 
   return (
-    <div className="md:mt-[80px]  overflow-hidden">
-      <div className="text-center md:mb-[50px]">
+    <div className="md:mt-[80px]  overflow-hidden mt-[50px] mb-[50px]">
+      <div className="text-center md:mb-[50px] mb-[25px]">
         <Title
           subtitle="Our Clients"
         />
