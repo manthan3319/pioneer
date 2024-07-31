@@ -1,8 +1,11 @@
 import React from "react";
 import { logo } from "../../images/Images";
 import { Link } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
 
 const Copyright_Section = () => {
+  const location = useLocation();
+  const path = location.pathname.substring(1);
   const NavbarMenu = [
     { id: 1, name: "Home", link: "/" },
     { id: 2, name: "About", link: "/about" },
@@ -23,7 +26,7 @@ const Copyright_Section = () => {
   ];
 
   return (
-    <div className="mt-[80px] bg-[#e7e5e58a]">
+    <div className={` ${path === "machinery" ?"mt-[0px]":"mt-[80px]" } bg-[#e7e5e58a]`}>
       <div className="footer pt-[50px]">
         <div className="lg:max-w-[1440px] m-auto flex flex-wrap justify-between px-[20px]">
           <div className="md:w-[40%]">

@@ -46,12 +46,12 @@ const Painting_Contractor = () => {
         <div className="lg:max-w-[1440px] m-auto md:mt-[100px] md:mb-[150px]">
           <div className="flex flex-col md:flex-row items-center text-center">
             <div className="w-[100%] max-w-[1270px] m-auto">
-              <p className="text-[#a2373a] font-poppins md:text-[28px] text-[18px] text">
+              <p className="text-[#ff0007] font-Oxanium md:text-[28px] text-[18px] ">
                 Welcome To Pioneer Industries
               </p>
               <div
                 ref={ref}
-                className="md:text-[55px] text-white font-bold mt-[15px] text-[29px]"
+                className="md:text-[55px] text-white font-bold mt-[15px] text-[29px] sm:text-[36px] font-Oxanium"
               >
                 {inView && (
                   <Typewriter
@@ -65,7 +65,7 @@ const Painting_Contractor = () => {
                   />
                 )}
               </div>
-              <p className="text-white font-poppins mt-[10px] md:text-[25px] text-[15px]">
+              <p className="text-white font-poppins mt-[10px] md:text-[25px] text-[15px] sm:text-[18px]">
                 We would like to introduce ourselves as a service provider company
                 incorporated for providing industrial scaffolding and painting
                 at major industries.

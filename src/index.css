@@ -82,3 +82,41 @@
   text-shadow: 1px 2px 2px #225da39e;
 }
 
+.navbar_section .nav-link {
+  position: relative;
+  color: #225DA5;
+  transition: color 0.3s ease;
+}
+
+.navbar_section .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #a2373a; /* Change to your customRed color */
+  transition: width 0.3s ease;
+}
+
+.navbar_section .nav-link:hover {
+  color: #a2373a; /* Change to your customRed color */
+}
+
+.navbar_section .nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.navbar_section .active-link {
+  color: #000000;
+}
+
+.navbar_section .active-link::after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #a2373a; /* Change to your customRed color */
+}

@@ -9,6 +9,7 @@ module.exports = {
         sans: ['Open Sans', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
         batak: ['Noto Sans Batak', 'sans-serif'],
+        Oxanium:['Oxanium','sans-serif']
       },
       colors: {
         customBlue: '#225DA5',

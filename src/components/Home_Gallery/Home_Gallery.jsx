@@ -46,7 +46,7 @@ const GalleryCard = ({ item, index }) => {
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
       variants={variants}
-      className="md:w-[25%] sm:w-[45%] bg-white rounded-lg overflow-hidden shadow-lg w-[100%]"
+      className="md:w-[48%] lg:w-[31%] xl:w-[23%] sm:w-[45%] bg-white rounded-lg overflow-hidden shadow-lg w-[100%]"
     >
       <div>
         <img src={item.image} alt={item.title} className="w-full h-[200px] object-cover" />

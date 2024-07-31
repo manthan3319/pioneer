@@ -4,21 +4,26 @@ import { abount_img } from "../../images/Images";
 import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
+import { useLocation } from 'react-router-dom';
 
 const Home_About = () => {
+  const location = useLocation();
+  const path = location.pathname.substring(1);
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
   });
 
   return (
-    <div className="lg:max-w-[1440px] m-auto md:mt-[80px] px-[20px]">
+    <div className="lg:max-w-[1440px] m-auto md:mt-[80px] px-[20px] sm:mt-[50px] mt-[50px]">
       <div className="flex md:flex-row flex-col gap-[40px]">
         <div
-          className="md:w-[50%] bg-cover bg-center bg-no-repeat relative min-w-[150px] md:block hidden"
-          style={{ backgroundImage: `url(${abount_img})`, minHeight: "100%" }}
+          className={`bg-cover bg-center bg-no-repeat   lg:min-w-[150px] lg:w-[50%] sm:relative relative  md:absolute lg:relative md:w-[95%] ${path === "about"? "md:min-h-[701px] sm:min-h-[737px] min-h-[1050px]":"lg:min-h-[100%]  sm:min-h-[804px] min-h-[1080px]"} `}
+          style={{ backgroundImage: `url(${abount_img})` }}
         >
-          <div className="absolute bg-customRed text-center bottom-0 p-[35px] border-[10px] border-white">
+          <div className="absolute inset-0 bg-[#322f2f] opacity-80 lg:hidden"></div>
+
+          <div className="absolute bg-customRed text-center bottom-0 p-[35px] border-[10px] border-white hidden lg:block">
             <h1 className="text-[50px] font-poppins text-white font-bold">
               {inView ? (
                 <CountUp start={0} end={13} duration={2.75} suffix="+" />
@@ -30,27 +35,17 @@ const Home_About = () => {
           </div>
         </div>
 
-        <div className="md:hidden block">
-          <div className="absolute bg-customRed text-center  p-[35px] border-[10px] border-white bottom-[-108px] left-[50px]">
-            <h1 className="text-[50px] font-poppins text-white font-bold">
-              {inView ? (
-                <CountUp start={0} end={13} duration={2.75} suffix="+" />
-              ) : (
-                "0+"
-              )}
-            </h1>
-            <p className="text-white font-poppins">Years Experience</p>
-          </div>
-        </div>
-        <div className="md:w-[50%] flex flex-col justify-center mt-[80px] md:mt-[0px]">
+        <div className=" flex flex-col justify-center  sm:mt-0 mt-0 md:mt-[0px] lg:w-[50%] sm:absolute  absolute md:relative md:p-[15px] sm:w-[95%] w-[90%] sm:p-[15px] p-[10px]">
           <div>
+            <h1 className="md:text-white lg:text-black sm:text-white sm:text-[25px] text-[35px] text-white">
             <Title
               title="About Us"
               subtitle="Our Commitment to <br>Innovation"
             />
+            </h1>
             <div className="mt-[30px]">
               <motion.p
-                className="text-gray-500 font-poppins"
+                className="lg:text-gray-500 font-poppins text-white"
                 ref={ref}
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -64,7 +59,7 @@ const Home_About = () => {
               </motion.p>
 
               <motion.p
-                className="text-gray-500 font-poppins mt-[30px]"
+                className="lg:text-gray-500 font-poppins mt-[30px] text-white"
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.3 }}
@@ -78,7 +73,7 @@ const Home_About = () => {
               </motion.p>
 
               <motion.p
-                className="text-gray-500 font-poppins mt-[30px]"
+                className="lg:text-gray-500 font-poppins mt-[30px] text-white"
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.6 }}
@@ -90,6 +85,17 @@ const Home_About = () => {
                 faith in us, which grew our company fourfold and reached a
                 milestone to be an 18 crore company in the year 2012-2013.
               </motion.p>
+            </div>
+
+            <div className="block lg:hidden bg-customRed text-center p-[35px] border-[10px] border-white sm:w-[36%] mt-[24px] w-[70%]">
+              <h1 className="text-[50px] font-poppins text-white font-bold">
+                {inView ? (
+                  <CountUp start={0} end={13} duration={2.75} suffix="+" />
+                ) : (
+                  "0+"
+                )}
+              </h1>
+              <p className="text-white font-poppins">Years Experience</p>
             </div>
           </div>
         </div>

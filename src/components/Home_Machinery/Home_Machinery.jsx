@@ -1,8 +1,11 @@
 import React from "react";
 import Title from "../Function/Function";
 import { bgtechnology } from "../../images/Images";
+import { useLocation } from 'react-router-dom';
 
 const Home_Machinery = () => {
+  const location = useLocation();
+  const path = location.pathname.substring(1);
   const tabledata = [
     { id: 1, name: "Diesel Driven Air Compressor 300 CFM", makeby: "ELGI", modelno: "DT 300-100", qty: "3" },
     { id: 2, name: "Diesel Driven Air Compressor 250 CFM", makeby: "Atlas Copco", modelno: "VT-5", qty: "2" },
@@ -21,7 +24,7 @@ const Home_Machinery = () => {
 
   return (
     <div
-      className="relative md:mt-[80px] bg-cover bg-center bg-no-repeat py-[20px]"
+      className={`relative  ${path === "machinery" ? "md:mt-[0px]":"md:mt-[80px]"} bg-cover bg-center bg-no-repeat py-[20px]`}
       style={{ backgroundImage: `url(${bgtechnology})`, backgroundAttachment: "fixed" }}
     >
       <div className="absolute inset-0 bg-customBlue opacity-80"></div>
