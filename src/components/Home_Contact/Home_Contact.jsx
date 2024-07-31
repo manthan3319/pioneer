@@ -5,8 +5,8 @@ import { help } from "../../images/Images";
 const Home_Contact = () => {
   return (
     <div className="lg:max-w-[1440px] m-auto md:mt-[140px] mt-[70px] px-[20px]">
-      <div className="flex lg:flex-row items-center gap-[50px]  flex-col-reverse md:flex-col">
-        <div className="lg:w-[40%] w-[100%] md:w-[100%] text-center md:text-left">
+      <div className="flex lg:flex-row-reverse  items-center gap-[50px]  flex-col-reverse md:flex-col">
+        <div className="lg:w-[50%] w-[100%] md:w-[100%] text-center md:text-left">
           <Title
             title="Get in Touch"
             subtitle="Contact Our Experts  <br>for Help"
@@ -42,7 +42,7 @@ const Home_Contact = () => {
           </div>
         </div>
 
-        <div className="lg::w-[60%] w-[100%] md:w-[100%]">
+        <div className="lg::w-[50%] w-[100%] md:w-[100%]">
           <div
             className="relative  bg-cover bg-center bg-no-repeat py-[50px] md:px-[50px] px-[20px] "
             style={{

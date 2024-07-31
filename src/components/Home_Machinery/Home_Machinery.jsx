@@ -24,7 +24,7 @@ const Home_Machinery = () => {
 
   return (
     <div
-      className={`relative  ${path === "machinery" ? "md:mt-[0px]":"md:mt-[80px]"} bg-cover bg-center bg-no-repeat py-[20px]`}
+      className={`relative  ${path === "machinery" ? "md:mt-[0px]":"md:mt-[0px]"} bg-cover bg-center bg-no-repeat py-[20px]`}
       style={{ backgroundImage: `url(${bgtechnology})`, backgroundAttachment: "fixed" }}
     >
       <div className="absolute inset-0 bg-customBlue opacity-80"></div>

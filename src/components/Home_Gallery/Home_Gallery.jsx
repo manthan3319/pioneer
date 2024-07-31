@@ -10,7 +10,7 @@ const galleryItems = [
   { id: 3, image: gallery3, title: "OIL & GAS INDUSTRY" },
   { id: 4, image: gallery4, title: "INDUSTRIAL SHUTDOWNS" },
   { id: 5, image: gallery5, title: "INFRASTRUCTURE CONSTRUCTION" },
-  { id: 6, image: gallery6, title: "ROUTINE MAINTENACE & REPAIRS" },
+  { id: 6, image: gallery6, title: "ROUTINE MAINTENANCE & REPAIRS" },
   { id: 7, image: gallery7, title: "STORAGE TANKS & PIPE LINE" },
 ];
 
@@ -18,7 +18,7 @@ const Home_Gallery = () => {
   return (
     <div className="lg:max-w-[1440px] m-auto md:mt-[80px] mt-[30px] px-[20px]">
       <div className="text-center">
-        <h1 className="border-b-[2px] inline-block border-customRed pb-[5px] ">
+        <h1 className="border-b-[2px] inline-block border-customRed pb-[5px]">
           <Title subtitle="Gallery" />
         </h1>
       </div>
@@ -36,8 +36,12 @@ const GalleryCard = ({ item, index }) => {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
   const variants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: index * 0.2 } },
+    hidden: { opacity: 0, scale: 0.9, y: 50 },
+    visible: {
+      opacity: 1,
+      // scale: 1,
+      transition: { duration: 0.6, delay: index * 0.2, type: "spring", stiffness: 100 }
+    },
   };
 
   return (
@@ -46,13 +50,20 @@ const GalleryCard = ({ item, index }) => {
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
       variants={variants}
-      className="md:w-[48%] lg:w-[31%] xl:w-[23%] sm:w-[45%] bg-white rounded-lg overflow-hidden shadow-lg w-[100%]"
+      className="md:w-[48%] lg:w-[31%] xl:w-[23%] sm:w-[45%] w-[100%] bg-white rounded-lg overflow-hidden shadow-lg border-[1px] border-black transition-transform duration-300 hover:scale-105 hover:shadow-xl hover:border-customRed"
     >
-      <div>
-        <img src={item.image} alt={item.title} className="w-full h-[200px] object-cover" />
+      <div className="relative">
+        <img
+          src={item.image}
+          alt={item.title}
+          className="w-full h-[200px] object-cover transition-transform duration-300"
+        />
+       
       </div>
       <div className="p-[15px] text-center">
-        <h1 className="text-customRed font-poppins md:text-[20px] font-medium">{item.title}</h1>
+        <h1 className="text-customRed font-poppins md:text-[20px] font-medium">
+          {item.title}
+        </h1>
       </div>
     </motion.div>
   );

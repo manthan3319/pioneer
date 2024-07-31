@@ -20,14 +20,16 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Title from "../Function/Function";
+
 const Home_Clients = () => {
   const settings = {
     infinite: true,
-    speed: 500,
+    speed: 3000,
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 0,
+    cssEase: 'linear',
     responsive: [
       {
         breakpoint: 1024,
@@ -68,21 +70,22 @@ const Home_Clients = () => {
     clint15,
   ];
 
+  // Duplicate the clients array to ensure continuous effect
+  const extendedClients = [...clients, ...clients, ...clients];
+
   return (
-    <div className="md:mt-[80px]  overflow-hidden mt-[50px] mb-[50px]">
+    <div className="md:mt-[80px] overflow-hidden mt-[50px] bg-[#daeaff] lg:py-[50px]">
       <div className="text-center md:mb-[50px] mb-[25px]">
-        <Title
-          subtitle="Our Clients"
-        />
+        <Title subtitle="Our Clients" />
       </div>
-      <div className="">
+      <div className="slider_clint">
         <Slider {...settings}>
-          {clients.map((client, index) => (
-            <div key={index}>
+          {extendedClients.map((client, index) => (
+            <div key={index} className="p-[0] slides_logo_clint">
               <img
                 src={client}
                 alt={`client-${index}`}
-                className="w-[350x] m-auto"
+                className="w-[100%] h-[auto] m-auto"
               />
             </div>
           ))}

@@ -51,7 +51,7 @@ const Copyright_Section = () => {
           </div>
 
           <div className="md:w-[20%] w-[100%] mt-[35px] md:mt-[0px]">
-            <h1 className="text-[20px] font-poppins font-bold mb-[20px]">Company</h1>
+            <h1 className="text-[20px] font-Oxanium font-bold mb-[20px] text-customRed">Company</h1>
             <ul className="list-none p-0">
               {NavbarMenu.map((item) => (
                 <li key={item.id} className="mb-[10px]">
@@ -63,7 +63,7 @@ const Copyright_Section = () => {
             </ul>
           </div>
           <div className="md:w-[20%] mt-[35px] md:mt-[0px]">
-            <h1 className="text-[20px] font-poppins font-bold mb-[20px]">Other Link</h1>
+            <h1 className="text-[20px] font-Oxanium font-bold mb-[20px] text-customRed">Other Link</h1>
             <ul className="list-none p-0">
               {NavbarMenu.map((item) => (
                 <li key={item.id} className="mb-[10px]">
@@ -77,9 +77,11 @@ const Copyright_Section = () => {
         </div>
       </div>
       <div className="text-center py-[15px] text-black border-t-customBlue border-t-[2px] mt-[70px] px-[20px]">
-        <p className="font-poppins font-medium text-[15px]">
-          Copyright 2012 Pioneer Scaffolding and Painting Contractors | Brightensolutions
+        <Link to="https://brightensolutions.com/" >
+        <p className="font-poppins font-medium text-[15px] lg:text-[18px]">
+          © Copyright 2024 by <Link to="https://brightensolutions.com/" className="text-customRed font-Oxanium font-bold hover:text-customBlue"> Brighten Solutions </Link>
         </p>
+        </Link>
       </div>
     </div>
   );

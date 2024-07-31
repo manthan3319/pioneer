@@ -120,3 +120,8 @@
   height: 2px;
   background-color: #a2373a; /* Change to your customRed color */
 }
+
+
+.slides_logo_clint{
+  width: 200px !important;
+}

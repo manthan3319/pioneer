@@ -24,14 +24,14 @@ const Home_About = () => {
           <div className="absolute inset-0 bg-[#322f2f] opacity-80 lg:hidden"></div>
 
           <div className="absolute bg-customRed text-center bottom-0 p-[35px] border-[10px] border-white hidden lg:block">
-            <h1 className="text-[50px] font-poppins text-white font-bold">
+            <h1 className="text-[50px] font-Oxanium text-white font-bold">
               {inView ? (
                 <CountUp start={0} end={13} duration={2.75} suffix="+" />
               ) : (
                 "0+"
               )}
             </h1>
-            <p className="text-white font-poppins">Years Experience</p>
+            <p className="text-white font-Oxanium">Years Experience</p>
           </div>
         </div>
 
