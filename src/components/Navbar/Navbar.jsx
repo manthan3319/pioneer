@@ -36,9 +36,7 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`navbar-container navbar_section${
-          isFixed ? "fixed-navbar animate-navbar" : ""
-        } md:block hidden`}
+        className={`navbar-container navbar_section ${isFixed ? "fixed-navbar animate-navbar" : "" } md:block hidden`}
       >
         <div className="bg-black py-[10px]">
           <div className="lg:max-w-[1440px] m-auto px-[20px]">

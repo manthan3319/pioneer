@@ -39,7 +39,7 @@ const GalleryCard = ({ item, index }) => {
     hidden: { opacity: 0, scale: 0.9, y: 50 },
     visible: {
       opacity: 1,
-      // scale: 1,
+      scale: 1,
       transition: { duration: 0.6, delay: index * 0.2, type: "spring", stiffness: 100 }
     },
   };
