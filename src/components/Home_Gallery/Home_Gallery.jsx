@@ -44,6 +44,7 @@ const GalleryCard = ({ item, index }) => {
     },
   };
 
+
   return (
     <motion.div
       ref={ref}
