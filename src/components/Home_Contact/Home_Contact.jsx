@@ -36,7 +36,7 @@ const Home_Contact = () => {
               <i class="fa fa-envelope-o" aria-hidden="true"></i>
               </span>
               <p className="text-gray-500 md:text-[20px] font-poppins text-[15px]  lg:text-[16px] xl:text-[20px]">
-              pioneer.scaffoldings@rediffmail.com
+              info@pioneeradhesives.com
               </p>
             </div>
           </div>

@@ -1,12 +1,12 @@
 // ReusableDiv.js
 import React from 'react';
 
-const Title = ({ title, subtitle, subtitleColor = 'customBlue' }) => {
+const Title = ({ title, subtitle, subtitleColor = 'black' }) => {
   return (
     <div>
-      <p className='md:text-[30px] font-Oxanium text-customRed sm:text-[25px] text-[29px]'>{title}</p>
+      <p className='md:text-[30px] font-Oxanium text-customBlue sm:text-[25px] text-[29px] border-b-[2px]  font-bold inline-block border-customRed'>{title}</p>
       <h1
-        className={`md:text-[45px] lg:text-[35px] sm:text-[35px] xl:text-[45px] text-[29px] font-Oxanium font-extrabold md:leading-[50px] text-${subtitleColor} md:mt-[20px] mt-[10px]`}
+        className={`md:text-[45px] lg:text-[35px] sm:text-[35px]  xl:text-[45px] text-[29px] font-Oxanium font-extrabold md:leading-[50px] text-${subtitleColor} md:mt-[20px] mt-[10px]`}
         dangerouslySetInnerHTML={{ __html: subtitle }}
       />
     </div>

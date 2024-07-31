@@ -1,15 +1,21 @@
 import React from "react";
-import {  abount_img, cpatsman_service, industrialpainting, painting_coating, sectionimg } from "../../images/Images";
+import {
+  abount_img,
+  cpatsman_service,
+  industrialpainting,
+  painting_coating,
+} from "../../images/Images";
 import { useInView } from "react-intersection-observer";
 import { Typewriter } from "react-simple-typewriter";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Bounce } from "react-awesome-reveal"; // Import animation from react-awesome-reveal
 
 const Painting_Contractor = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.1,
+    threshold: 0.2,
   });
 
   const sliderSettings = {
@@ -46,9 +52,11 @@ const Painting_Contractor = () => {
         <div className="lg:max-w-[1440px] m-auto md:mt-[100px] md:mb-[150px]">
           <div className="flex flex-col md:flex-row items-center text-center">
             <div className="w-[100%] max-w-[1270px] m-auto">
-              <p className="text-[#ff0007] font-Oxanium md:text-[28px] text-[18px] ">
-                Welcome To Pioneer Industries
-              </p>
+              <Bounce triggerOnce> {/* Apply bounce animation */}
+                <p className="text-[#95a6ff] font-Oxanium md:text-[35px] text-[23px] animate-pulse welcome_text">
+                  Welcome To <span className="highlight">Pioneer Corporation</span>
+                </p>
+              </Bounce>
               <div
                 ref={ref}
                 className="md:text-[55px] text-white font-bold mt-[15px] text-[29px] sm:text-[36px] font-Oxanium"

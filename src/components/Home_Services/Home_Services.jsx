@@ -70,7 +70,7 @@ const ServiceCard = ({ service, index }) => {
       animate={inView ? "visible" : "hidden"}
       variants={variants}
       whileHover={{ scale: 1.05, boxShadow: "0 10px 20px rgba(0, 0, 0, 0.2)", transition: { duration: 0.3 } }}
-      className="md:w-[48%] sm:w-[45%] xl:w-[31%] lg:w-[48%] bg-white rounded-[5px] shadow-lg service_card"
+      className="md:w-[48%] sm:w-[45%] xl:w-[31%] lg:w-[48%] bg-white rounded-[5px] shadow-lg service_card border-[1px] border-customBlue"
     >
       <div>
         <img src={service.image} className="w-[100%] rounded-t-[5px] md:min-h-[300px]" alt={service.title} />

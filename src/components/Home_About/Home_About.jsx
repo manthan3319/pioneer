@@ -18,7 +18,7 @@ const Home_About = () => {
     <div className="lg:max-w-[1440px] m-auto md:mt-[80px] px-[20px] sm:mt-[50px] mt-[50px]">
       <div className="flex md:flex-row flex-col gap-[40px]">
         <div
-          className={`bg-cover bg-center bg-no-repeat   lg:min-w-[150px] lg:w-[50%] sm:relative relative  md:absolute lg:relative md:w-[95%] ${path === "about"? "md:min-h-[701px] sm:min-h-[737px] min-h-[1050px]":"lg:min-h-[100%]  sm:min-h-[804px] min-h-[1080px]"} `}
+          className={`bg-cover bg-center bg-no-repeat  home_about_img lg:min-w-[150px] lg:w-[50%] sm:relative relative  md:absolute lg:relative md:w-[95%] ${path === "about"? "md:min-h-[701px] sm:min-h-[737px] min-h-[1050px]":"lg:min-h-[100%]  sm:min-h-[804px] min-h-[1080px]"} `}
           style={{ backgroundImage: `url(${abount_img})` }}
         >
           <div className="absolute inset-0 bg-[#322f2f] opacity-80 lg:hidden"></div>

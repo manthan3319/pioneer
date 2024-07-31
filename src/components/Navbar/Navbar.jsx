@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { logo } from "../../images/Images";
 import { useInView } from "react-intersection-observer";
 import Drawer from "react-modern-drawer";
@@ -18,7 +18,7 @@ const Navbar = () => {
     }
   }, [isAboutInView]);
 
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState);
   };
@@ -29,14 +29,15 @@ const Navbar = () => {
     { id: 3, name: "Services", link: "/services" },
     { id: 4, name: "Clients", link: "/clients" },
     { id: 5, name: "Machinery", link: "/machinery" },
-    { id: 6, name: "Gallery", link: "/gallery" },
-    { id: 7, name: "Contact Us", link: "/contactus" },
+    { id: 6, name: "Gallery", link: "/gallery" }
   ];
 
   return (
     <>
       <div
-        className={`navbar-container navbar_section ${isFixed ? "fixed-navbar animate-navbar" : "" } md:block hidden`}
+        className={`navbar-container navbar_section ${
+          isFixed ? "fixed-navbar animate-navbar" : ""
+        } md:block hidden`}
       >
         <div className="bg-black py-[10px]">
           <div className="lg:max-w-[1440px] m-auto px-[20px]">
@@ -62,7 +63,7 @@ const Navbar = () => {
                   <span>
                     <i className="fa fa-envelope-o" aria-hidden="true"></i>
                   </span>
-                  pioneer.scaffoldings@rediffmail.com
+                  info@pioneeradhesives.com
                 </p>
               </div>
             </div>
@@ -72,23 +73,25 @@ const Navbar = () => {
         <div className="lg:max-w-[1440px] m-auto px-[20px]">
           <div className="flex items-center justify-between">
             <div>
-              <img src={logo} alt="logo" className="lg:w-[300px] md:w-[200px]" />
+              <img
+                src={logo}
+                alt="logo"
+                className="lg:w-[300px] md:w-[200px]"
+              />
             </div>
 
             <div>
               <nav>
                 <ul className="flex gap-[20px]">
-                  {NavbarMenu.map((item) => (
+                  {NavbarMenu.map((item, index) => (
                     <li
                       key={item.id}
-                      className="lg:text-[19px] md:text-[14px] font-Oxanium font-medium font-bold"
+                      className={`lg:text-[19px] md:text-[14px] font-Oxanium font-bold `}
                     >
                       <NavLink
                         to={item.link}
                         className={({ isActive }) =>
-                          isActive
-                            ? "active-link"
-                            : "nav-link"
+                          isActive ? "active-link" : "nav-link"
                         }
                       >
                         {item.name}
@@ -97,6 +100,10 @@ const Navbar = () => {
                   ))}
                 </ul>
               </nav>
+            </div>
+
+            <div>
+              <Link to="/contactus" className="text-[19px] text-white bg-customRed font-Oxanium px-[28px] py-[13px] rounded-[5px]">Contact Us</Link>
             </div>
           </div>
         </div>
@@ -132,9 +139,7 @@ const Navbar = () => {
                     <NavLink
                       to={item.link}
                       className={({ isActive }) =>
-                        isActive
-                          ? "active-link"
-                          : "nav-link"
+                        isActive ? "active-link" : "nav-link"
                       }
                     >
                       {item.name}
