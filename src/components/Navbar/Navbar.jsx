@@ -71,7 +71,7 @@ const Navbar = () => {
         </div>
 
         <div className="lg:max-w-[1440px] m-auto px-[20px]">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between py-[10px]">
             <div>
               <img
                 src={logo}

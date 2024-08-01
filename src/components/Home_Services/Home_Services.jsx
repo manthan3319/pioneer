@@ -22,19 +22,7 @@ const services = [
     image: belzona,
     title: "Belzona Polymerics Ltd",
     description: "Authorized Applicator and Channel Partners for Belzona Polymerics Ltd: With over 50 products specially engineered to work within the parameters of your demanding environment, we offer solutions in a variety of industries. Our proven solutions to a wide array of maintenance and repair issues have allowed us to gain the confidence of countless engineers, architects, contractors and facilities managers."
-  },
-  {
-    id: 4,
-    image: firepotected,
-    title: "Fire Protection Solutions",
-    description: "Authorized Applicator and Channel Partners for 3M Fire Protection Solutions: 3M Fire Protection Products are used around the world to help protect people, equipment buildings and precious assets. <br> <br>Authorized Applicator and Channel Partners for 3M Fire Protection Solutions: 3M Fire Protection Products are used around the world to help protect people, equipment buildings and precious assets."
-  },
-  {
-    id: 5,
-    image: industrialpainting,
-    title: "Following are the services which we offer in industrial painting",
-    description: "->Vacuum Blasting <br>->Shot Blasting <br>->Garnet Blasting <br>->Wet Blasting  <br>->Grit Blasting <br>->Automatic Blasting  <br>->Copper Slag Blasting "
-  },
+  }
 ];
 
 const Home_Services = () => {

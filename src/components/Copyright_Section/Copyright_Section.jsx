@@ -2,10 +2,12 @@ import React from "react";
 import { logo } from "../../images/Images";
 import { Link } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
+import our_catelog from "../../Pdf/PSPC_CATALOUGE.pdf"; // Import the PDF
 
 const Copyright_Section = () => {
   const location = useLocation();
   const path = location.pathname.substring(1);
+
   const NavbarMenu = [
     { id: 1, name: "Home", link: "/" },
     { id: 2, name: "About", link: "/about" },
@@ -17,16 +19,11 @@ const Copyright_Section = () => {
   ];
 
   const NavbarMenu2 = [
-    { id: 1, name: "Privacy & Policy", link: "/" },
-    { id: 2, name: "Legal Services", link: "/" },
-    { id: 3, name: "Blog Post", link: "/services" },
-    { id: 4, name: "Career", link: "/clients" },
-    { id: 5, name: "Copyright", link: "/machinery" },
-    { id: 6, name: "Disclaimer", link: "/gallery" }
+    { id: 1, name: "Our Catalouge", link: our_catelog }
   ];
 
   return (
-    <div className={` ${path === "machinery" ?"mt-[0px]":"mt-[80px]" } bg-[#e7e5e58a]`}>
+    <div className={` ${path === "machinery" ? "mt-[0px]" : "mt-[80px]"} bg-[#e7e5e58a]`}>
       <div className="footer pt-[50px]">
         <div className="lg:max-w-[1440px] m-auto flex flex-wrap justify-between px-[20px]">
           <div className="md:w-[40%]">
@@ -62,25 +59,27 @@ const Copyright_Section = () => {
               ))}
             </ul>
           </div>
+
           <div className="md:w-[20%] mt-[35px] md:mt-[0px]">
             <h1 className="text-[20px] font-Oxanium font-bold mb-[20px] text-customRed">Other Link</h1>
             <ul className="list-none p-0">
-              {NavbarMenu.map((item) => (
+              {NavbarMenu2.map((item) => (
                 <li key={item.id} className="mb-[10px]">
-                  <Link to={item.link} className="text-gray-800 hover:text-customRed font-poppins">
+                  <a href={item.link} className="text-gray-800 hover:text-customRed font-poppins" download>
                     {item.name}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
+            <Link className="bg-customBlue text-white py-[5px] px-[10px] mt-[10px] inline-block font-Oxanium rounded-[4px]">Group Companies</Link>
           </div>
         </div>
       </div>
       <div className="text-center py-[15px] text-black border-t-customBlue border-t-[2px] mt-[70px] px-[20px]">
         <Link to="https://brightensolutions.com/" >
-        <p className="font-poppins font-medium text-[15px] lg:text-[18px]">
-          © Copyright 2024 by <Link to="https://brightensolutions.com/" className="text-customRed font-Oxanium font-bold hover:text-customBlue"> Brighten Solutions </Link>
-        </p>
+          <p className="font-poppins font-medium text-[15px] lg:text-[18px]">
+            © Copyright 2024 by <Link to="https://brightensolutions.com/" className="text-customRed font-Oxanium font-bold hover:text-customBlue"> Brighten Solutions </Link>
+          </p>
         </Link>
       </div>
     </div>
