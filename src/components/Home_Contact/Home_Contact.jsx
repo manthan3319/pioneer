@@ -27,7 +27,7 @@ const Home_Contact = () => {
               <i class="fa fa-phone" aria-hidden="true"></i>
               </span>
               <p className="text-gray-500 md:text-[20px] font-poppins text-[17px]  lg:text-[16px] xl:text-[20px]">
-              +91 9825120450
+              +91 9328769174
               </p>
             </div>
 
@@ -36,7 +36,7 @@ const Home_Contact = () => {
               <i class="fa fa-envelope-o" aria-hidden="true"></i>
               </span>
               <p className="text-gray-500 md:text-[20px] font-poppins text-[15px]  lg:text-[16px] xl:text-[20px]">
-              info@pioneeradhesives.com
+              info@pioneerscaffoldings.com
               </p>
             </div>
           </div>

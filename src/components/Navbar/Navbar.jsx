@@ -57,13 +57,13 @@ const Navbar = () => {
                   <span>
                     <i className="fa fa-phone" aria-hidden="true"></i>
                   </span>
-                  +91 9825120450
+                  +91 9328769174
                 </p>
                 <p className="text-white flex gap-[10px] font-poppins xl:text-[14px]  2xl:text-[14px] lg:text-[13px]">
                   <span>
                     <i className="fa fa-envelope-o" aria-hidden="true"></i>
                   </span>
-                  info@pioneeradhesives.com
+                  info@pioneerscaffoldings.com
                 </p>
               </div>
             </div>
