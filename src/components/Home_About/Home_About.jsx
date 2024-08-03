@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "../Function/Function";
-import { abount_img } from "../../images/Images";
+import { abount_img, certificate1, certificate2 } from "../../images/Images";
 import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
@@ -18,7 +18,7 @@ const Home_About = () => {
     <div className="lg:max-w-[1440px] m-auto md:mt-[80px] px-[20px] sm:mt-[50px] mt-[50px]">
       <div className="flex md:flex-row flex-col gap-[40px]">
         <div
-          className={`bg-cover bg-center bg-no-repeat  home_about_img lg:min-w-[150px] lg:w-[50%] sm:relative relative  md:absolute lg:relative md:w-[95%] ${path === "about"? "md:min-h-[701px] sm:min-h-[737px] min-h-[1050px]":"lg:min-h-[100%]  sm:min-h-[804px] min-h-[1080px]"} `}
+          className={`bg-cover bg-center bg-no-repeat  home_about_img lg:min-w-[150px] lg:w-[50%] sm:relative relative  md:absolute lg:relative md:w-[95%] ${path === "about" ? "md:min-h-[701px] sm:min-h-[737px] min-h-[1310px]" : "lg:min-h-[100%]  sm:min-h-[804px] min-h-[1400px]"} `}
           style={{ backgroundImage: `url(${abount_img})` }}
         >
           <div className="absolute inset-0 bg-[#322f2f] opacity-80 lg:hidden"></div>
@@ -38,10 +38,10 @@ const Home_About = () => {
         <div className=" flex flex-col justify-center  sm:mt-0 mt-0 md:mt-[0px] lg:w-[50%] sm:absolute  absolute md:relative md:p-[15px] sm:w-[95%] w-[90%] sm:p-[15px] p-[10px]">
           <div>
             <h1 className="md:text-white lg:text-black sm:text-white sm:text-[25px] text-[35px] text-white">
-            <Title
-              title="About Us"
-              subtitle="Our Commitment to <br>Innovation"
-            />
+              <Title
+                title="About Us"
+                subtitle="Our Commitment to <br>Innovation"
+              />
             </h1>
             <div className="mt-[30px]">
               <motion.p
@@ -85,6 +85,41 @@ const Home_About = () => {
                 faith in us, which grew our company fourfold and reached a
                 milestone to be an 18 crore company in the year 2012-2013.
               </motion.p>
+
+              <div className="flex sm:flex-row flex-col gap-[10px] mt-[15px] items-center">
+                <div className="flex gap-[10px] mt-[15px]">
+                  <div>
+                    <motion.p
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={inView ? { opacity: 1, y: 0 } : {}}
+                      transition={{ duration: 0.5, delay: 0.6 }}
+                    >
+                      <img src={certificate1} alt="certificate1" className="w-[150px] border-[2px] border-black" />
+                    </motion.p>
+                  </div>
+
+                  <div>
+                    <motion.p
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={inView ? { opacity: 1, y: 0 } : {}}
+                      transition={{ duration: 0.5, delay: 0.6 }}
+                    >
+                      <img src={certificate2} alt="certificate1" className="w-[150px] border-[2px] border-black" />
+                    </motion.p>
+                  </div>
+                </div>
+
+                <div>
+                <motion.p
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={inView ? { opacity: 1, y: 0 } : {}}
+                      transition={{ duration: 0.5, delay: 0.6 }}
+                    >
+                  <h1 className="sm:text-[18px] font-bold lg:text-black text-white text-center sm:text-left">AN ISO 9001:2015 | ISO 45001 : 2018 CERTIFIED COMPANY</h1>
+                  </motion.p>
+                </div>
+
+              </div>
             </div>
 
             <div className="block lg:hidden bg-customRed text-center p-[35px] border-[10px] border-white sm:w-[36%] mt-[24px] w-[70%]">

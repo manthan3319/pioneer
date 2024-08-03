@@ -115,6 +115,27 @@ const Home_Clients = () => {
           ))}
         </Slider>
       </div>
+
+      <div className="lg:max-w-[1440px] m-auto sm:mt-[70px] sm:mb-[100px] my-[100px]">
+        <div className="flex flex-wrap gap-[20px] justify-center">
+          <img src={clint1} className="sm:w-[220px] w-[132px]" alt="clint" />
+          <img src={clint2} className="sm:w-[220px] w-[132px]" alt="clint" />
+          <img src={clint3} className="sm:w-[220px] w-[132px]" alt="clint" />
+          <img src={clint4} className="sm:w-[220px] w-[132px]" alt="clint" />
+          <img src={clint5} className="sm:w-[220px] w-[132px]" alt="clint" />
+          <img src={clint6} className="sm:w-[220px] w-[132px]" alt="clint" />
+          <img src={clint7} className="sm:w-[220px] w-[132px]" alt="clint" />
+          <img src={clint8} className="sm:w-[220px] w-[132px]" alt="clint" />
+          <img src={clint9} className="sm:w-[220px] w-[132px]" alt="clint" />
+          <img src={clint10} className="sm:w-[220px] w-[132px]" alt="clint" />
+          <img src={clint11} className="sm:w-[220px] w-[132px]" alt="clint" />
+          <img src={clint12} className="sm:w-[220px] w-[132px]" alt="clint" />
+          <img src={clint13} className="sm:w-[220px] w-[132px]" alt="clint" />
+          <img src={clint14} className="sm:w-[220px] w-[132px]" alt="clint" />
+          <img src={clint15} className="sm:w-[220px] w-[132px]" alt="clint" />
+        </div>
+      </div>
+
     </div>
   );
 };
