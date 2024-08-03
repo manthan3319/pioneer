@@ -32,8 +32,12 @@ import gallery7 from "../images/gallery7.jpg";
 import help from "../images/help.jpg";
 import sectionimg from "../images/sectionimg.png";
 import customer_helper from "../images/customer_helper.jpg";
+import certificate1 from "../images/certificate_1.jpg";
+import certificate2 from "../images/certificate.jpg";
 
 export {
+     certificate1,
+     certificate2,
      logo,
       banner_men,
       abount_img,

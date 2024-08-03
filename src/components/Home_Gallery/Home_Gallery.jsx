@@ -9,7 +9,6 @@ const galleryItems = [
   { id: 2, image: gallery2, title: "CHIMNEY MAINTENANCE & REPAIRS" },
   { id: 3, image: gallery3, title: "OIL & GAS INDUSTRY" },
   { id: 4, image: gallery4, title: "INDUSTRIAL SHUTDOWNS" },
-  { id: 5, image: gallery5, title: "INFRASTRUCTURE CONSTRUCTION" },
   { id: 6, image: gallery6, title: "ROUTINE MAINTENANCE & REPAIRS" },
   { id: 7, image: gallery7, title: "STORAGE TANKS & PIPE LINE" },
 ];
