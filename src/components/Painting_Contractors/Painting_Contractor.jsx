@@ -59,7 +59,7 @@ const Painting_Contractor = () => {
               </Bounce>
               <div
                 ref={ref}
-                className="md:text-[55px] text-white font-bold mt-[15px] text-[29px] sm:text-[36px] font-Oxanium"
+                className="md:text-[52px] text-white font-bold mt-[15px] text-[29px] sm:text-[34px] font-poppins"
               >
                 {inView && (
                   <Typewriter

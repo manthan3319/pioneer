@@ -2,7 +2,7 @@ import React from "react";
 import { logo } from "../../images/Images";
 import { Link } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
-import our_catelog from "../../Pdf/PSPC_CATALOUGE.pdf"; // Import the PDF
+import our_catelog from "../../Pdf/PSPC_CATALOUGE.pdf";
 
 const Copyright_Section = () => {
   const location = useLocation();
