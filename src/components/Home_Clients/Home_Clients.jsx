@@ -136,7 +136,7 @@ const Home_Clients = () => {
           <img src={clint12} className="sm:w-[220px] w-[132px]" alt="clint" />
           <img src={clint13} className="sm:w-[220px] w-[132px]" alt="clint" />
           <img src={clint14} className="sm:w-[220px] w-[132px]" alt="clint" />
-          <img src={clint15} className="sm:w-[220px] w-[132px]" alt="clint" />
+          {/* <img src={clint15} className="sm:w-[220px] w-[132px]" alt="clint" /> */}
           <img src={clint16} className="sm:w-[220px] w-[132px] max-h-[116px]" alt="clint" />
           <img src={clint17} className="sm:w-[220px] w-[132px] max-h-[116px]" alt="clint" />
           <img src={clint19} className="sm:w-[220px] w-[132px] max-h-[116px]" alt="clint" />
