@@ -23,7 +23,7 @@ const Copyright_Section = () => {
   ];
 
   return (
-    <div className={` ${path === "machinery" ? "mt-[0px]" : "mt-[80px]"} bg-[#e7e5e58a]`}>
+    <div className={` ${path === "machinery" ? "mt-[0px]" : "mt-[0px]"} bg-[#e7e5e58a]`}>
       <div className="footer pt-[50px]">
         <div className="lg:max-w-[1440px] m-auto flex flex-wrap justify-between px-[20px]">
           <div className="md:w-[40%]">

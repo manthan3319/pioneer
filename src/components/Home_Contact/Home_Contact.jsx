@@ -16,7 +16,7 @@ const Home_Contact = () => {
               <span className="text-customRed md:text-[50px] text-[32px]">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
               </span>
-              <p className="text-gray-500 md:text-[20px] font-poppins text-[17px] lg:text-[16px] xl:text-[20px]">
+              <p className="text-gray-500 md:text-[20px] font-poppins text-[17px] lg:text-[16px] xl:text-[24px]">
                 Pioneer Scaffolding And Painting Contractors 1004, Icon Business
                 Center, Opp Central Mall, Piplod, Surat, Gujarat 395007
               </p>
@@ -26,7 +26,7 @@ const Home_Contact = () => {
               <span className="text-customRed md:text-[40px] text-[30px]">
               <i class="fa fa-phone" aria-hidden="true"></i>
               </span>
-              <p className="text-gray-500 md:text-[20px] font-poppins text-[17px]  lg:text-[16px] xl:text-[20px]">
+              <p className="text-gray-500 md:text-[20px] font-poppins text-[17px]  lg:text-[16px] xl:text-[27px]">
               +91 9328769174
               </p>
             </div>
@@ -35,14 +35,14 @@ const Home_Contact = () => {
               <span className="text-customRed md:text-[40px]  text-[25px]">
               <i class="fa fa-envelope-o" aria-hidden="true"></i>
               </span>
-              <p className="text-gray-500 md:text-[20px] font-poppins text-[15px]  lg:text-[16px] xl:text-[20px]">
+              <p className="text-gray-500 md:text-[20px] font-poppins text-[15px]  lg:text-[16px] xl:text-[27px]">
               info@pioneerscaffoldings.com
               </p>
             </div>
           </div>
         </div>
 
-        <div className="lg::w-[50%] w-[100%] md:w-[100%]">
+        <div className="lg:w-[48%] w-[100%] md:w-[100%]">
           <div
             className="relative  bg-cover bg-center bg-no-repeat py-[50px] md:px-[50px] px-[20px] "
             style={{

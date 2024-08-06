@@ -16,7 +16,7 @@ const Title = ({ title, subtitle, subtitleColor = 'black' }) => {
 export const DynamicBackground = ({ bgImage, title }) => {
   return (
     <div
-      className="relative bg-cover bg-center bg-no-repeat py-[20px] lg:min-h-[450px] flex items-center justify-center min-h-[300px]"
+      className="relative bg-cover bg-center bg-no-repeat py-[20px] lg:min-h-[248px] flex items-center justify-center min-h-[300px]"
       style={{ backgroundImage: `url(${bgImage})`, backgroundAttachment: "fixed" }}
     >
       <div className="absolute inset-0 bg-black opacity-80"></div>

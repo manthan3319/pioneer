@@ -48,18 +48,18 @@ const Painting_Contractor = () => {
       </Slider>
 
       {/* Content */}
-      <div className="absolute inset-0 flex flex-col justify-center text-white bg-black bg-opacity-80 px-[20px]">
+      <div className="absolute inset-0 flex flex-col justify-center text-white  bg-opacity-80 px-[20px]">
         <div className="lg:max-w-[1440px] m-auto md:mt-[100px] md:mb-[150px]">
-          <div className="flex flex-col md:flex-row items-center text-center">
-            <div className="w-[100%] max-w-[1270px] m-auto">
+          <div className="flex flex-col md:flex-row items-center text-center ">
+            <div className="w-[100%] max-w-[1270px] m-auto bg-[#f0f8ffad] px-[32px] py-[72px] rounded-[5px]">
               <Bounce triggerOnce> {/* Apply bounce animation */}
-                <p className="text-[#95a6ff] font-Oxanium md:text-[35px] text-[23px] animate-pulse welcome_text">
+                <p className="text-customBlue  font-bold font-Oxanium md:text-[35px] text-[23px] animate-pulse welcome_text">
                   Welcome To <span className="highlight">Pioneer Corporation</span>
                 </p>
               </Bounce>
               <div
                 ref={ref}
-                className="md:text-[52px] text-white font-bold mt-[15px] text-[29px] sm:text-[34px] font-poppins"
+                className="md:text-[52px] text-black font-bold mt-[15px] text-[29px] sm:text-[34px] font-poppins"
               >
                 {inView && (
                   <Typewriter
@@ -73,7 +73,7 @@ const Painting_Contractor = () => {
                   />
                 )}
               </div>
-              <p className="text-white font-poppins mt-[10px] md:text-[25px] text-[15px] sm:text-[18px]">
+              <p className="text-black font-poppins mt-[10px] md:text-[25px] text-[15px] sm:text-[18px]">
                 We would like to introduce ourselves as a service provider company
                 incorporated for providing industrial scaffolding and painting
                 at major industries.

@@ -94,7 +94,7 @@ const Home_About = () => {
                       animate={inView ? { opacity: 1, y: 0 } : {}}
                       transition={{ duration: 0.5, delay: 0.6 }}
                     >
-                      <img src={certificate1} alt="certificate1" className="w-[150px] border-[2px] border-black" />
+                      <img src={certificate1} alt="certificate1" className="w-[150px] xl:w-[439px] border-[2px] border-black" />
                     </motion.p>
                   </div>
 
@@ -104,7 +104,7 @@ const Home_About = () => {
                       animate={inView ? { opacity: 1, y: 0 } : {}}
                       transition={{ duration: 0.5, delay: 0.6 }}
                     >
-                      <img src={certificate2} alt="certificate1" className="w-[150px] border-[2px] border-black" />
+                      <img src={certificate2} alt="certificate1" className="w-[150px]  xl:w-[439px] border-[2px] border-black" />
                     </motion.p>
                   </div>
                 </div>

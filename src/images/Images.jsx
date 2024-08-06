@@ -35,6 +35,13 @@ import sectionimg from "../images/sectionimg.png";
 import customer_helper from "../images/customer_helper.jpg";
 import certificate1 from "../images/certificate_1.jpg";
 import certificate2 from "../images/certificate.jpg";
+import clint16 from "../images/clint11.png";
+import clint17 from "../images/clint12.jpg";
+import clint18 from "../images/clint13.jpg";
+import clint19 from "../images/clint14.jpg";
+import clint20 from "../images/clint15.jpg";
+import clint21 from "../images/clint16.jpg";
+import clint22 from "../images/clint17.png";
 
 export {
      certificate1,
@@ -72,5 +79,12 @@ export {
       gallery7,
       help,
       sectionimg,
-      customer_helper };
+      customer_helper,
+      clint16,
+      clint17,
+      clint18,
+      clint19,
+      clint20,
+      clint21,
+      clint22 };
 
