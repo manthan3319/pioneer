@@ -5,6 +5,15 @@ import {
   industrialpainting,
   painting_coating,
   sectionimg,
+  service10,
+  service11,
+  service12,
+  service13,
+  service14,
+  service15,
+  service16,
+  service17,
+  service18,
 } from "../../images/Images";
 import { useInView } from "react-intersection-observer";
 import { Typewriter } from "react-simple-typewriter";
@@ -35,16 +44,31 @@ const Painting_Contractor = () => {
       {/* Slider */}
       <Slider {...sliderSettings} className="absolute inset-0">
         <div className="relative w-full h-[600px]">
-          <img src={abount_img} alt="Banner 1" className="w-full h-full object-cover" />
+          <img src={service10} alt="Banner 1" className="w-full h-full object-cover" />
         </div>
         <div className="relative w-full h-[600px]">
-          <img src={cpatsman_service} alt="Banner 1" className="w-full h-full object-cover" />
+          <img src={service11} alt="Banner 1" className="w-full h-full object-cover" />
         </div>
         <div className="relative w-full h-[600px]">
-          <img src={painting_coating} alt="Banner 1" className="w-full h-full object-cover" />
+          <img src={service12} alt="Banner 1" className="w-full h-full object-cover" />
         </div>
         <div className="relative w-full h-[600px]">
-          <img src={industrialpainting} alt="Banner 2" className="w-full h-full object-cover" />
+          <img src={service13} alt="Banner 2" className="w-full h-full object-cover" />
+        </div>
+        <div className="relative w-full h-[600px]">
+          <img src={service14} alt="Banner 2" className="w-full h-full object-cover" />
+        </div>
+        <div className="relative w-full h-[600px]">
+          <img src={service15} alt="Banner 2" className="w-full h-full object-cover" />
+        </div>
+        <div className="relative w-full h-[600px]">
+          <img src={service16} alt="Banner 2" className="w-full h-full object-cover" />
+        </div>
+        <div className="relative w-full h-[600px]">
+          <img src={service17} alt="Banner 2" className="w-full h-full object-cover" />
+        </div>
+        <div className="relative w-full h-[600px]">
+          <img src={service18} alt="Banner 2" className="w-full h-full object-cover" />
         </div>
       </Slider>
 

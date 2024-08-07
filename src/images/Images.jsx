@@ -50,6 +50,15 @@ import service5 from "../images/7.png";
 import service6 from "../images/8.jpeg";
 import service7 from "../images/9.jpg";
 import service8 from "../images/9.png";
+import service10 from "../images/service10.JPG";
+import service11 from "../images/11.JPG";
+import service12 from "../images/12.JPG";
+import service13 from "../images/13.JPG";
+import service14 from "../images/14.JPG";
+import service15 from "../images/15.JPG";
+import service16 from "../images/16.JPG";
+import service17 from "../images/17.JPG";
+import service18 from "../images/18.JPG";
 
 export {
      certificate1,
@@ -102,5 +111,14 @@ export {
       service5,
       service6,
       service7,
-      service8 };
+      service8,
+     service10,
+     service11,
+     service12,
+     service13,
+     service14,
+     service15,
+     service16,
+     service17,
+     service18 };
 

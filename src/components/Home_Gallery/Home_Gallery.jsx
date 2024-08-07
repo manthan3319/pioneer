@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "../Function/Function";
-import { gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7, service1, service2, service3, service4, service5, service6, service7, service8 } from "../../images/Images";
+import { gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7, service1, service10, service11, service12, service13, service14, service15, service16, service17, service18, service2, service3, service4, service5, service6, service7, service8 } from "../../images/Images";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -19,6 +19,15 @@ const galleryItems = [
   { id: 7, image: service6, title: "STORAGE TANKS & PIPE LINE" },
   { id: 7, image: service7, title: "STORAGE TANKS & PIPE LINE" },
   { id: 7, image: service8, title: "STORAGE TANKS & PIPE LINE" },
+  { id: 7, image: service10, title: "STORAGE TANKS & PIPE LINE" },
+  { id: 7, image: service11},
+  { id: 7, image: service12},
+  { id: 7, image: service13},
+  { id: 7, image: service14},
+  { id: 7, image: service15},
+  { id: 7, image: service16},
+  { id: 7, image: service17},
+  { id: 7, image: service18}
 ];
 
 const Home_Gallery = () => {
@@ -68,11 +77,11 @@ const GalleryCard = ({ item, index }) => {
         />
        
       </div>
-      <div className="p-[15px] text-center">
+      {/* <div className="p-[15px] text-center">
         <h1 className="text-customRed font-poppins md:text-[20px] font-medium">
           {item.title}
         </h1>
-      </div>
+      </div> */}
     </motion.div>
   );
 };
