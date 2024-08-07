@@ -19,7 +19,7 @@ export const DynamicBackground = ({ bgImage, title }) => {
       className="relative bg-cover bg-center bg-no-repeat py-[20px] lg:min-h-[248px] flex items-center justify-center min-h-[300px]"
       style={{ backgroundImage: `url(${bgImage})`, backgroundAttachment: "fixed" }}
     >
-      <div className="absolute inset-0 bg-black opacity-80"></div>
+      <div className="absolute inset-0 bg-[#727272] opacity-80"></div>
       <div className="relative flex flex-col items-center justify-center h-full w-full mt-[50px] md:mt-[0px]">
         <p className='flex gap-[10px] md:mb-[30px] text-white hover:text-customRed'>Home <span><i class="fa fa-angle-right" aria-hidden="true"></i></span> {title}</p>
         <h1 className="text-white  font-bold lg:text-[60px] font-Oxanium text-[45px]">{title}</h1>

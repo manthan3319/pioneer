@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "../Function/Function";
-import { gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7 } from "../../images/Images";
+import { gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7, service1, service2, service3, service4, service5, service6, service7, service8 } from "../../images/Images";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -11,11 +11,19 @@ const galleryItems = [
   { id: 4, image: gallery4, title: "INDUSTRIAL SHUTDOWNS" },
   { id: 6, image: gallery6, title: "ROUTINE MAINTENANCE & REPAIRS" },
   { id: 7, image: gallery7, title: "STORAGE TANKS & PIPE LINE" },
+  { id: 7, image: service1, title: "STORAGE TANKS & PIPE LINE" },
+  { id: 7, image: service2, title: "STORAGE TANKS & PIPE LINE" },
+  { id: 7, image: service3, title: "STORAGE TANKS & PIPE LINE" },
+  { id: 7, image: service4, title: "STORAGE TANKS & PIPE LINE" },
+  { id: 7, image: service5, title: "STORAGE TANKS & PIPE LINE" },
+  { id: 7, image: service6, title: "STORAGE TANKS & PIPE LINE" },
+  { id: 7, image: service7, title: "STORAGE TANKS & PIPE LINE" },
+  { id: 7, image: service8, title: "STORAGE TANKS & PIPE LINE" },
 ];
 
 const Home_Gallery = () => {
   return (
-    <div className="lg:max-w-[1440px] m-auto md:mt-[80px] mt-[30px] px-[20px]">
+    <div className="lg:max-w-[1440px] m-auto  px-[20px] py-[50px]">
       <div className="text-center">
         <h1 className="border-b-[2px] inline-block border-customRed pb-[5px]">
           <Title subtitle="Gallery" />

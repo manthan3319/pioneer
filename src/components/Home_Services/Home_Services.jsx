@@ -9,19 +9,19 @@ const services = [
     id: 1,
     image: cpatsman_service,
     title: "Scaffolding Services",
-    description: "Pioneer has evolved as one of the most competitive scaffolding services provider in the region and we at Pioneer have knowledge and expertise to handle scaffold erection to reach whether your industrial project or the multi-storey commercial building.<br />We stock a variety of different types of scaffolding that can be customized to your specific requirements.<br />We offer scaffolding and accessories for all size of projects from small and medium to large and major projects."
+    description: "Pioneer offers competitive scaffolding services for industrial and commercial projects of all sizes. We customize scaffolding to meet specific requirements and provide detailed CAD drawings for client visualization. With a proven track record, we deliver safe and cost-effective solutions. Our strong client relationships result in high repeat business. Contact us for reliable and expert scaffolding services for your next project."
   },
   {
     id: 2,
     image: painting_coating,
     title: "Painting and Coating Services",
-    description: "We provide a broad range of routine to specialized industrial painting services and proudly list a prestigious number of high quality clients and noteworthy projects.<br /><br />We at Pioneer will provide you with the confidence that your industrial painting job will be done to the highest levels of your expectations. When we handle your project, our quality, services, safety, on-time performance and genuine economic value are assured."
+    description: "Pioneer prioritizes industrial painting and coating services, offering a broad range from routine to specialized projects. We ensure quality, safety, on-time performance, and economic value, with a prestigious list of high-quality clients and projects. Our services include various blasting techniques, epoxy coating and painting, and thermal zinc/aluminum spray. We manage and self-perform all work to meet your highest expectations. Partner with us for innovative solutions and seamless project execution."
   },
   {
     id: 3,
     image: belzona,
     title: "Belzona Polymerics Ltd",
-    description: "Authorized Applicator and Channel Partners for Belzona Polymerics Ltd: With over 50 products specially engineered to work within the parameters of your demanding environment, we offer solutions in a variety of industries. Our proven solutions to a wide array of maintenance and repair issues have allowed us to gain the confidence of countless engineers, architects, contractors and facilities managers."
+    description: "Pioneer is an authorized applicator and channel partner for Belzona Polymerics Ltd, offering over 50 specialized products for diverse industries. Our solutions address maintenance and repair issues, earning the trust of engineers, architects, contractors, and facility managers. With over 55 years of experience, Belzona Polymerics Ltd provides proven solutions for problems like erosion, corrosion, chemical attacks, abrasion, and water/weatherproofing. Our expertise ensures effective handling of challenges such as corrosion under insulation (CUI) and safety surfacing."
   }
 ];
 
@@ -65,7 +65,7 @@ const ServiceCard = ({ service, index }) => {
       </div>
       <div className="p-[15px]">
         <h1 className="text-customRed font-poppins md:text-[20px] font-bold mb-[5px] text-center">{service.title}</h1>
-        {/* <p className="text-gray-500 font-poppins text-[17px]" dangerouslySetInnerHTML={{ __html: service.description }} /> */}
+        <p className="text-gray-500 font-poppins text-[17px]" dangerouslySetInnerHTML={{ __html: service.description }} />
       </div>
     </motion.div>
   );

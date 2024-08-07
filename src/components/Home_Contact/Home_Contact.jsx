@@ -45,18 +45,18 @@ const Home_Contact = () => {
         <div className="lg:w-[48%] w-[100%] md:w-[100%]">
           <div
             className="relative  bg-cover bg-center bg-no-repeat py-[50px] md:px-[50px] px-[20px] "
-            style={{
-              backgroundImage: `url(${help})`,
-              minHeight: "100%",
-            }}
+            // style={{
+            //   backgroundImage: `url(${help})`,
+            //   minHeight: "100%",
+            // }}
           >
-            <div className="absolute inset-0 bg-[#051932] opacity-90"></div>
+            <div className="absolute inset-0 bg-[#727272c7] opacity-90"></div>
 
             <div className="relative">
               <input
                 type="text"
                 placeholder="Name"
-                className="py-[15px] px-[10px] border-[1px] border-white w-[100%] bg-transparent rounded-[4px] outline-none text-white"
+                className="py-[15px] px-[10px] border-[1px] border-white w-[100%] bg-transparent rounded-[4px] outline-none text-black"
               />
 
               <div className="flex gap-[10px] my-[30px]">

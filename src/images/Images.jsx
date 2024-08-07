@@ -42,6 +42,14 @@ import clint19 from "../images/clint14.jpg";
 import clint20 from "../images/clint15.jpg";
 import clint21 from "../images/clint16.jpg";
 import clint22 from "../images/clint17.png";
+import service1 from "../images/1.jpg";
+import service2 from "../images/2.jpg";
+import service3 from "../images/3.jpg";
+import service4 from "../images/4.jpg";
+import service5 from "../images/7.png";
+import service6 from "../images/8.jpeg";
+import service7 from "../images/9.jpg";
+import service8 from "../images/9.png";
 
 export {
      certificate1,
@@ -86,5 +94,13 @@ export {
       clint19,
       clint20,
       clint21,
-      clint22 };
+      clint22,
+      service1,
+      service2,
+      service3,
+      service4,
+      service5,
+      service6,
+      service7,
+      service8 };
 

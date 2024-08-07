@@ -28,10 +28,11 @@ const Copyright_Section = () => {
         <div className="lg:max-w-[1440px] m-auto flex flex-wrap justify-between px-[20px]">
           <div className="md:w-[40%]">
             <img src={logo} alt="logo" className="w-[350px]" />
-            <p className="mt-[30px] text-[16px] font-poppins max-w-[500px]">
-              We would like to introduce ourselves as a service provider company incorporated for providing industrial scaffolding and painting at major industries.
+            <p className="mt-[30px] text-[16px] font-poppins max-w-[500px] font-bold">
+            Progress never takes a day off neither does our
+            Determination to deliver by "Exploring Transformation"
             </p>
-            <div className="flex flex-row gap-[21px] mt-[26px]">
+            {/* <div className="flex flex-row gap-[21px] mt-[26px]">
               <Link className="text-[20px] flex justify-center items-center bg-customBlue text-white w-[40px] h-[40px] text-center rounded-[50px] px-[10px]">
                 <span><i className="fa fa-facebook" aria-hidden="true"></i></span>
               </Link>
@@ -44,7 +45,7 @@ const Copyright_Section = () => {
               <Link className="text-[20px] flex justify-center items-center bg-customBlue text-white w-[40px] h-[40px] text-center rounded-[50px] px-[10px]">
                 <span><i className="fa fa-linkedin" aria-hidden="true"></i></span>
               </Link>
-            </div>
+            </div> */}
           </div>
 
           <div className="md:w-[20%] w-[100%] mt-[35px] md:mt-[0px]">

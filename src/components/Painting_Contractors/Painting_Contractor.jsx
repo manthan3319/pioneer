@@ -4,6 +4,7 @@ import {
   cpatsman_service,
   industrialpainting,
   painting_coating,
+  sectionimg,
 } from "../../images/Images";
 import { useInView } from "react-intersection-observer";
 import { Typewriter } from "react-simple-typewriter";
@@ -19,7 +20,7 @@ const Painting_Contractor = () => {
   });
 
   const sliderSettings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -48,10 +49,10 @@ const Painting_Contractor = () => {
       </Slider>
 
       {/* Content */}
-      <div className="absolute inset-0 flex flex-col justify-center text-white  bg-opacity-80 px-[20px]">
-        <div className="lg:max-w-[1440px] m-auto md:mt-[100px] md:mb-[150px]">
-          <div className="flex flex-col md:flex-row items-center text-center ">
-            <div className="w-[100%] max-w-[1270px] m-auto bg-[#f0f8ffad] px-[32px] py-[72px] rounded-[5px]">
+      <div className="bg-[#00000012]">
+        <div className="lg:max-w-[1440px] m-auto  md:mb-[150px]">
+          <div className="flex flex-col lg:flex-row items-center text-left ">
+            <div className="lg:w-[60%] max-w-[1270px] m-auto px-[32px] py-[72px] rounded-[5px]">
               <Bounce triggerOnce> {/* Apply bounce animation */}
                 <p className="text-customBlue  font-bold font-Oxanium md:text-[35px] text-[23px] animate-pulse welcome_text">
                   Welcome To <span className="highlight">Pioneer Corporation</span>
@@ -79,9 +80,16 @@ const Painting_Contractor = () => {
                 at major industries.
               </p>
             </div>
-            {/* <div className="md:w-[60%]">
-              <img src={sectionimg} className="w-[80%] m-auto" alt="Section Image" />
-            </div> */}
+            <div className="lg:w-[40%] bg-white p-[15px] w-[100%]">
+                  <h1 className="lg:text-[40px] text-customBlue font-Oxanium font-bold text-[35px]">Core Competence</h1>
+
+                  <div className="mt-[20px]">
+                    <p className="flex gap-[10px] font-poppins lg:text-[25px] text-customRed text-[18px] mb-[10px]"><span><i class="fa fa-check" aria-hidden="true"></i></span> Scaffolding Services</p>
+                    <p className="flex gap-[10px] font-poppins lg:text-[25px] text-customRed text-[18px] mb-[10px]"><span><i class="fa fa-check" aria-hidden="true"></i></span> Painting and Coating Services</p>
+                    <p className="flex gap-[10px] font-poppins lg:text-[25px] text-customRed text-[18px] mb-[10px]"><span><i class="fa fa-check" aria-hidden="true"></i></span> Belzona Polymerics Ltd</p>
+                    <p className="flex gap-[10px] font-poppins lg:text-[25px] text-customRed text-[18px] mb-[10px]"><span><i class="fa fa-check" aria-hidden="true"></i></span> Scaffolding Services</p>
+                  </div>
+            </div>
           </div>
         </div>
       </div>
