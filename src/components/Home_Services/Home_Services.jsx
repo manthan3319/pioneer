@@ -9,7 +9,7 @@ const services = [
     id: 1,
     image: cpatsman_service,
     title: "Scaffolding Services",
-    description: "Pioneer offers competitive scaffolding services for industrial and commercial projects of all sizes. We customize scaffolding to meet specific requirements and provide detailed CAD drawings for client visualization. With a proven track record, we deliver safe and cost-effective solutions. Our strong client relationships result in high repeat business. Contact us for reliable and expert scaffolding services for your next project."
+    description: "Pioneer offers competitive scaffolding services for industrial and commercial projects of all sizes. We customize scaffolding to meet specific requirements. With a proven track record, we deliver safe and cost-effective solutions. Our strong client relationships result in high repeat business. Contact us for reliable and expert scaffolding services for your  project."
   },
   {
     id: 2,
