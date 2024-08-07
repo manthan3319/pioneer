@@ -2,12 +2,12 @@ import React from "react";
 import Title from "../Function/Function";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { belzona, cpatsman_service, firepotected, industrialpainting, painting_coating } from "../../images/Images";
+import { belzona,painting_coating, service10 } from "../../images/Images";
 
 const services = [
   {
     id: 1,
-    image: cpatsman_service,
+    image: service10,
     title: "Scaffolding Services",
     description: "Pioneer offers competitive scaffolding services for industrial and commercial projects of all sizes. We customize scaffolding to meet specific requirements. With a proven track record, we deliver safe and cost-effective solutions. Our strong client relationships result in high repeat business. Contact us for reliable and expert scaffolding services for your  project."
   },
