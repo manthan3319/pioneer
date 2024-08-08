@@ -7,7 +7,7 @@ const Gallery = () => {
   return (
     <>
     <div>
-      <DynamicBackground bgImage={gallery5} title="Gallery" />
+      <DynamicBackground  title="Gallery" />
     </div>
     <div>
     <Home_Gallery/>

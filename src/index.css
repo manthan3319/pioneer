@@ -213,3 +213,8 @@
   cursor: pointer;
   border-radius: 5px;
 }
+
+.placeholder-custom::placeholder {
+  color:black; 
+  opacity: 1; 
+}

@@ -56,7 +56,7 @@ const Home_Contact = () => {
               <input
                 type="text"
                 placeholder="Name"
-                className="py-[15px] px-[10px] border-[1px] border-white w-[100%] bg-transparent rounded-[4px] outline-none text-black"
+                className="py-[15px] px-[10px] border-[1px] border-white w-[100%] bg-transparent rounded-[4px] outline-none text-white placeholder-custom"
               />
 
               <div className="flex gap-[10px] my-[30px]">
@@ -64,7 +64,7 @@ const Home_Contact = () => {
                   <input
                     type="email"
                     placeholder="Email"
-                    className="py-[15px] px-[10px] border-[1px] border-white w-[100%] bg-transparent rounded-[4px] outline-none text-white"
+                    className="py-[15px] px-[10px] border-[1px] border-white w-[100%] bg-transparent rounded-[4px] outline-none text-white placeholder-custom"
                   />
                 </div>
 
@@ -72,14 +72,14 @@ const Home_Contact = () => {
                   <input
                     type="Number"
                     placeholder="Number"
-                    className="py-[15px] px-[10px] border-[1px] border-white w-[100%] bg-transparent rounded-[4px] outline-none text-white"
+                    className="py-[15px] px-[10px] border-[1px] border-white w-[100%] bg-transparent rounded-[4px] outline-none text-white placeholder-custom"
                   />
                 </div>
               </div>
 
               <div>
                 <textarea
-                  class="mf-input mf-textarea outline-none bg-transparent text-white border-[1px] border-white w-[100%] p-[10px] rounded-[4px]"
+                  class="mf-input mf-textarea outline-none bg-transparent text-white border-[1px] border-white w-[100%] p-[10px] rounded-[4px] placeholder-custom"
                   id="mf-input-text-area-14f2470"
                   name="mf-textarea"
                   placeholder="Your Message "

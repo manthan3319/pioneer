@@ -7,7 +7,7 @@ const Page_Services = () => {
   return (
     <>
     <div>
-      <DynamicBackground bgImage={industrialpainting} title="Services" />
+      <DynamicBackground  title="Services" />
     </div>
     <div>
     <Home_Services/>

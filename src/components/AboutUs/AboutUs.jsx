@@ -7,7 +7,7 @@ const AboutUs = () => {
   return (
     <div className='bg_image'>
         <div>
-            <DynamicBackground bgImage={painting_coating} title="About Us" />
+            <DynamicBackground  title="About Us" />
         </div>
         <div>
             <Home_About/>
