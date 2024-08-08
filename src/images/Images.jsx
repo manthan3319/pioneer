@@ -59,7 +59,7 @@ import service15 from "../images/15.JPG";
 import service16 from "../images/16.JPG";
 import service17 from "../images/17.JPG";
 import service18 from "../images/18.JPG";
-
+import  bayer from "../images/bayer.png";
 export {
      certificate1,
      certificate2,
@@ -120,5 +120,6 @@ export {
      service15,
      service16,
      service17,
-     service18 };
+     service18,
+     bayer };
 

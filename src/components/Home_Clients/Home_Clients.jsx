@@ -1,6 +1,7 @@
 
 import React from "react";
 import {
+  bayer,
   clint1,
   clint10,
   clint11,
@@ -101,7 +102,7 @@ const Home_Clients = () => {
     clint14,
     clint15,
     clint16,
-    clint17,
+    bayer,
     clint18,
     clint19,
     clint20,
@@ -138,7 +139,7 @@ const Home_Clients = () => {
           <img src={clint14} className="sm:w-[220px] w-[132px]" alt="clint" />
           {/* <img src={clint15} className="sm:w-[220px] w-[132px]" alt="clint" /> */}
           <img src={clint16} className="sm:w-[220px] w-[132px] max-h-[116px]" alt="clint" />
-          <img src={clint17} className="sm:w-[220px] w-[132px] max-h-[116px]" alt="clint" />
+          <img src={bayer} className="sm:w-[220px] w-[132px] max-h-[116px]" alt="clint" />
           <img src={clint19} className="sm:w-[220px] w-[132px] max-h-[116px]" alt="clint" />
           {/* <img src={clint20} className="sm:w-[220px] w-[132px] max-h-[116px]" alt="clint" /> */}
           <img src={clint21} className="sm:w-[220px] w-[132px] max-h-[116px]" alt="clint" />

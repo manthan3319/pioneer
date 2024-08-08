@@ -44,16 +44,28 @@ const Painting_Contractor = () => {
       {/* Slider */}
       <Slider {...sliderSettings} className="absolute inset-0">
         <div className="relative w-full h-[600px]">
-          <img src={service10} alt="Banner 1" className="w-full h-full object-cover" />
+          <img src={service17} alt="Banner 1" className="w-full h-full object-cover" />
+        </div>
+        <div className="relative w-full h-[600px]">
+          <img src={service10} alt="Banner 2" className="w-full h-full object-cover" />
         </div>
         <div className="relative w-full h-[600px]">
           <img src={service11} alt="Banner 1" className="w-full h-full object-cover" />
         </div>
         <div className="relative w-full h-[600px]">
+          <img src={cpatsman_service} alt="Banner 1" className="w-full h-full object-cover" />
+        </div>
+        <div className="relative w-full h-[600px]">
           <img src={service12} alt="Banner 1" className="w-full h-full object-cover" />
         </div>
         <div className="relative w-full h-[600px]">
+          <img src={industrialpainting} alt="Banner 1" className="w-full h-full object-cover" />
+        </div>
+        <div className="relative w-full h-[600px]">
           <img src={service13} alt="Banner 2" className="w-full h-full object-cover" />
+        </div>
+        <div className="relative w-full h-[600px]">
+          <img src={painting_coating} alt="Banner 1" className="w-full h-full object-cover" />
         </div>
         <div className="relative w-full h-[600px]">
           <img src={service14} alt="Banner 2" className="w-full h-full object-cover" />
@@ -64,12 +76,10 @@ const Painting_Contractor = () => {
         <div className="relative w-full h-[600px]">
           <img src={service16} alt="Banner 2" className="w-full h-full object-cover" />
         </div>
-        <div className="relative w-full h-[600px]">
+        {/* <div className="relative w-full h-[600px]">
           <img src={service17} alt="Banner 2" className="w-full h-full object-cover" />
-        </div>
-        <div className="relative w-full h-[600px]">
-          <img src={service18} alt="Banner 2" className="w-full h-full object-cover" />
-        </div>
+        </div> */}
+        
       </Slider>
 
       {/* Content */}
