@@ -60,6 +60,10 @@ import service16 from "../images/16.JPG";
 import service17 from "../images/17.JPG";
 import service18 from "../images/18.JPG";
 import  bayer from "../images/bayer.png";
+import service19 from "../images/19.JPG";
+import service20 from "../images/20.JPG";
+import service21 from "../images/21.JPG";
+import service22 from "../images/22.JPG";
 export {
      certificate1,
      certificate2,
@@ -121,5 +125,11 @@ export {
      service16,
      service17,
      service18,
-     bayer };
+     bayer,
+     service19, 
+     service20,
+     service21,
+     service22
+
+};
 

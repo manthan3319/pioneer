@@ -7,7 +7,7 @@ const Client = () => {
   return (
     <>
       <div>
-        <DynamicBackground bgImage={belzona} title="Clients" />
+        <DynamicBackground title="Clients" />
       </div>
       <div>
         <Home_Clients />

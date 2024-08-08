@@ -14,6 +14,10 @@ import {
   service16,
   service17,
   service18,
+  service19,
+  service20,
+  service21,
+  service22,
 } from "../../images/Images";
 import { useInView } from "react-intersection-observer";
 import { Typewriter } from "react-simple-typewriter";
@@ -35,13 +39,12 @@ const Painting_Contractor = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     arrows: false,
   };
 
   return (
     <div className="relative">
-      {/* Slider */}
       <Slider {...sliderSettings} className="absolute inset-0">
         <div className="relative w-full h-[600px]">
           <img src={service17} alt="Banner 1" className="w-full h-full object-cover" />
@@ -50,13 +53,19 @@ const Painting_Contractor = () => {
           <img src={service10} alt="Banner 2" className="w-full h-full object-cover" />
         </div>
         <div className="relative w-full h-[600px]">
-          <img src={service11} alt="Banner 1" className="w-full h-full object-cover" />
-        </div>
-        <div className="relative w-full h-[600px]">
-          <img src={cpatsman_service} alt="Banner 1" className="w-full h-full object-cover" />
-        </div>
-        <div className="relative w-full h-[600px]">
           <img src={service12} alt="Banner 1" className="w-full h-full object-cover" />
+        </div>
+        <div className="relative w-full h-[600px]">
+          <img src={service19} alt="Banner 1" className="w-full h-full object-cover" />
+        </div>
+        <div className="relative w-full h-[600px]">
+          <img src={service20} alt="Banner 1" className="w-full h-full object-cover" />
+        </div>
+        <div className="relative w-full h-[600px]">
+          <img src={service21} alt="Banner 1" className="w-full h-full object-cover" />
+        </div>
+        <div className="relative w-full h-[600px]">
+          <img src={service22} alt="Banner 1" className="w-full h-full object-cover" />
         </div>
         <div className="relative w-full h-[600px]">
           <img src={industrialpainting} alt="Banner 1" className="w-full h-full object-cover" />
@@ -73,12 +82,7 @@ const Painting_Contractor = () => {
         <div className="relative w-full h-[600px]">
           <img src={service15} alt="Banner 2" className="w-full h-full object-cover" />
         </div>
-        <div className="relative w-full h-[600px]">
-          <img src={service16} alt="Banner 2" className="w-full h-full object-cover" />
-        </div>
-        {/* <div className="relative w-full h-[600px]">
-          <img src={service17} alt="Banner 2" className="w-full h-full object-cover" />
-        </div> */}
+        
         
       </Slider>
 
@@ -121,7 +125,7 @@ const Painting_Contractor = () => {
                     <p className="flex gap-[10px] font-poppins lg:text-[25px] text-customRed text-[18px] mb-[10px]"><span><i class="fa fa-check" aria-hidden="true"></i></span> Scaffolding Services</p>
                     <p className="flex gap-[10px] font-poppins lg:text-[25px] text-customRed text-[18px] mb-[10px]"><span><i class="fa fa-check" aria-hidden="true"></i></span> Painting and Coating Services</p>
                     <p className="flex gap-[10px] font-poppins lg:text-[25px] text-customRed text-[18px] mb-[10px]"><span><i class="fa fa-check" aria-hidden="true"></i></span> Belzona Polymerics Ltd</p>
-                    <p className="flex gap-[10px] font-poppins lg:text-[25px] text-customRed text-[18px] mb-[10px]"><span><i class="fa fa-check" aria-hidden="true"></i></span> Scaffolding Services</p>
+                    <p className="flex gap-[10px] font-poppins lg:text-[25px] text-customRed text-[18px] mb-[10px]"><span><i class="fa fa-check" aria-hidden="true"></i></span> Scaffolding Material On rental</p>
                   </div>
             </div>
           </div>
