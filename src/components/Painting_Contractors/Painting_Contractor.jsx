@@ -112,7 +112,7 @@ const Painting_Contractor = () => {
               </div>
               <p className="text-black font-poppins mt-[10px] md:text-[25px] text-[15px] sm:text-[18px]">
                 We would like to introduce ourselves as a services provider company
-                incorporated for providing industrial scaffolding and painting
+                incorporated for providing industrial scaffolding and painting services
                 at major industries.
               </p>
             </div>
@@ -131,7 +131,7 @@ const Painting_Contractor = () => {
                   <span><i className="fa fa-check" aria-hidden="true"></i></span> Belzona Polymerics Ltd
                 </p>
                 <p className="flex gap-[10px] font-poppins lg:text-[25px] text-customRed text-[18px] mb-[10px]">
-                  <span><i className="fa fa-check" aria-hidden="true"></i></span> Scaffolding Material On rental
+                  <span><i className="fa fa-check" aria-hidden="true"></i></span> Scaffolding Material On Rental
                 </p>
               </div>
             </div>

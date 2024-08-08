@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Title from "../Function/Function";
-import { abount_img, certificate1, certificate2 } from "../../images/Images";
+import { abount_img, certificate1, certificate2, service10 } from "../../images/Images";
 import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
 import { motion } from "framer-motion";
@@ -40,7 +40,7 @@ const Home_About = () => {
       <div className="flex md:flex-row flex-col gap-[40px]">
         <div
           className={`bg-cover bg-center bg-no-repeat home_about_img lg:min-w-[150px] lg:w-[50%] sm:relative relative md:absolute lg:relative md:w-[95%] ${path === "about" ? "md:min-h-[701px] sm:min-h-[737px] min-h-[1310px]" : "lg:min-h-[100%] sm:min-h-[804px] min-h-[1400px]"}`}
-          style={{ backgroundImage: `url(${abount_img})` }}
+          style={{ backgroundImage: `url(${service10})` }}
         >
           <div className="absolute inset-0 bg-[#322f2f] opacity-80 lg:hidden"></div>
 
@@ -104,7 +104,7 @@ const Home_About = () => {
                 products and solutions for industrial giants located in and
                 around Surat. Thanks to our valued customers for placing immense
                 faith in us, which grew our company fourfold and reached a
-                milestone to be an 18 crore company in the year 2022-2023.
+                milestone to be an 50 crore company in the year 2022-2023.
               </motion.p>
 
               <div className="flex sm:flex-row flex-col gap-[10px] mt-[15px] items-center">

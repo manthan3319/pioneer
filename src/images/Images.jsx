@@ -24,7 +24,7 @@ import clint14 from "../images/Clients14.jpg";
 import clint15 from "../images/Clients15.gif";
 import bgtechnology from "../images/background-technology.avif";
 import gallery1 from "../images/gallery1.jpeg";
-import gallery2 from "../images/gallery2.jpeg";
+import gallery2 from "../images/gallery2.JPG";
 import gallery3 from "../images/gallery3.jpeg";
 import gallery4 from "../images/gallery4.jpg";
 import gallery5 from "../images/gallery5.jpg";

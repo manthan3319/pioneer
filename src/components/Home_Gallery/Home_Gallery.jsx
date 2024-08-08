@@ -10,7 +10,7 @@ const galleryItems = [
   { id: 3, image: gallery3, title: "OIL & GAS INDUSTRY" },
   { id: 4, image: gallery4, title: "INDUSTRIAL SHUTDOWNS" },
   { id: 6, image: gallery6, title: "ROUTINE MAINTENANCE & REPAIRS" },
-  { id: 7, image: gallery7, title: "STORAGE TANKS & PIPE LINE" },
+  // { id: 7, image: gallery7, title: "STORAGE TANKS & PIPE LINE" },
   { id: 7, image: service1, title: "STORAGE TANKS & PIPE LINE" },
   { id: 7, image: service2, title: "STORAGE TANKS & PIPE LINE" },
   { id: 7, image: service3, title: "STORAGE TANKS & PIPE LINE" },

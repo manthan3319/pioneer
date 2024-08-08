@@ -100,12 +100,10 @@ const Home_Clients = () => {
     clint12,
     clint13,
     clint14,
-    clint15,
     clint16,
     bayer,
     clint18,
     clint19,
-    clint20,
     clint21,
     clint22,
   ];
