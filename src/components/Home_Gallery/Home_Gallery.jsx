@@ -33,11 +33,11 @@ const galleryItems = [
 const Home_Gallery = () => {
   return (
     <div className="lg:max-w-[1440px] m-auto  px-[20px] py-[50px]">
-      <div className="text-center">
+      {/* <div className="text-center">
         <h1 className="border-b-[2px] inline-block border-customRed pb-[5px]">
           <Title subtitle="Gallery" />
         </h1>
-      </div>
+      </div> */}
 
       <div className="md:mt-[50px] flex flex-wrap gap-[20px] justify-center mt-[30px]">
         {galleryItems.map((item, index) => (

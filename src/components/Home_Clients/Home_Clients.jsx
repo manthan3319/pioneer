@@ -117,9 +117,9 @@ const Home_Clients = () => {
 
   return (
     <div className="overflow-hidden bg-[#daeaff] ">
-      <div className="text-center mb-[25px]">
+      {/* <div className="text-center mb-[25px]">
         <Title subtitle="Our Clients" />
-      </div>
+      </div> */}
 
       <div className="lg:max-w-[1440px] m-auto sm:mt-[70px] sm:mb-[100px] my-[100px]">
         <div className="flex flex-wrap gap-[20px] justify-center items-center">
