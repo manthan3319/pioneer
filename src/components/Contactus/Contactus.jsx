@@ -8,7 +8,7 @@ const Contactus = () => {
     <div>
       <>
         <div>
-          <DynamicBackground bgImage={customer_helper} title="Contact Us" />
+          <DynamicBackground  title="Contact Us" />
         </div>
         <div>
           <Home_Contact />

@@ -104,7 +104,7 @@ const Home_About = () => {
                 products and solutions for industrial giants located in and
                 around Surat. Thanks to our valued customers for placing immense
                 faith in us, which grew our company fourfold and reached a
-                milestone to be an 50 crore company in the year 2022-2023.
+                milestone to be an INR 50 crore company in the year 2022-2023.
               </motion.p>
 
               <div className="flex sm:flex-row flex-col gap-[10px] mt-[15px] items-center">

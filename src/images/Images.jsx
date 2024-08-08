@@ -64,6 +64,12 @@ import service19 from "../images/19.JPG";
 import service20 from "../images/20.JPG";
 import service21 from "../images/21.JPG";
 import service22 from "../images/22.JPG";
+import Gallery8 from  "../images/9 (2).JPG";
+import shelllogo from "../images/Shell-Logo";
+import Navin_Flourine_International from "../images/Navin_Flourine_International.jpg";
+import Aditya_Birla_Group_Logo from "../images/Aditya_Birla_Group_Logo.png";
+import gardenvareli from "../images/gardenvareli.png";
+import furnacefabrica from "../images/furnacefabrica.png";
 export {
      certificate1,
      certificate2,
@@ -129,7 +135,13 @@ export {
      service19, 
      service20,
      service21,
-     service22
+     service22,
+     Gallery8,
+     shelllogo,
+     Navin_Flourine_International,
+     Aditya_Birla_Group_Logo,
+     gardenvareli,
+     furnacefabrica
 
 };
 

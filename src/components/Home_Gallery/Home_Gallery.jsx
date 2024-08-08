@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "../Function/Function";
-import { gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7, service1, service10, service11, service12, service13, service14, service15, service16, service17, service18, service2, service3, service4, service5, service6, service7, service8 } from "../../images/Images";
+import { gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7, Gallery8, service1, service10, service11, service12, service13, service14, service15, service16, service17, service18, service2, service3, service4, service5, service6, service7, service8 } from "../../images/Images";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -18,7 +18,7 @@ const galleryItems = [
   { id: 7, image: service5, title: "STORAGE TANKS & PIPE LINE" },
   { id: 7, image: service6, title: "STORAGE TANKS & PIPE LINE" },
   { id: 7, image: service7, title: "STORAGE TANKS & PIPE LINE" },
-  { id: 7, image: service8, title: "STORAGE TANKS & PIPE LINE" },
+  { id: 7, image: Gallery8, title: "STORAGE TANKS & PIPE LINE" },
   { id: 7, image: service10, title: "STORAGE TANKS & PIPE LINE" },
   { id: 7, image: service11},
   { id: 7, image: service12},
