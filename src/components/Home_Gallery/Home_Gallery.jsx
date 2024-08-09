@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "../Function/Function";
-import { gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7, Gallery8, service1, service10, service11, service12, service13, service14, service15, service16, service17, service18, service2, service3, service4, service5, service6, service7, service8 } from "../../images/Images";
+import { gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7, Gallery8, service1, service10, service11, service12, service13, service14, service15, service16, service17, service18, service2, service20, service3, service4, service5, service6, service7, service8 } from "../../images/Images";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -25,21 +25,14 @@ const galleryItems = [
   { id: 7, image: service13},
   { id: 7, image: service14},
   { id: 7, image: service15},
-  { id: 7, image: service16},
-  { id: 7, image: service17},
-  { id: 7, image: service18}
+  { id: 7, image: service20},
 ];
 
 const Home_Gallery = () => {
   return (
-    <div className="lg:max-w-[1440px] m-auto  px-[20px] py-[50px]">
-      {/* <div className="text-center">
-        <h1 className="border-b-[2px] inline-block border-customRed pb-[5px]">
-          <Title subtitle="Gallery" />
-        </h1>
-      </div> */}
+    <div className="lg:max-w-[1440px] m-auto  px-[20px] pb-[120px]">
 
-      <div className="md:mt-[50px] flex flex-wrap gap-[20px] justify-center mt-[30px]">
+      <div className="flex flex-wrap gap-[10px] justify-center ">
         {galleryItems.map((item, index) => (
           <GalleryCard key={item.id} item={item} index={index} />
         ))}
@@ -55,7 +48,6 @@ const GalleryCard = ({ item, index }) => {
     hidden: { opacity: 0, scale: 0.9, y: 50 },
     visible: {
       opacity: 1,
-      scale: 1,
       transition: { duration: 0.6, delay: index * 0.2, type: "spring", stiffness: 100 }
     },
   };

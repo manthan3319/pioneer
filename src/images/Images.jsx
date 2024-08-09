@@ -13,7 +13,7 @@ import clint3 from "../images/Clients3.gif";
 import clint4 from "../images/Clients4.gif";
 import clint5 from "../images/Clients5.gif";
 import clint6 from "../images/Clients6.gif";
-import clint7 from "../images/Clients7.gif";
+import clint7 from "../images/UPL_official_logo.png";
 import clint8 from "../images/Clients8.gif";
 import clint9 from "../images/Clients9.gif";
 import clint10 from "../images/Clients10.gif";
@@ -68,7 +68,7 @@ import Gallery8 from  "../images/9 (2).JPG";
 import shelllogo from "../images/Shell-Logo";
 import Navin_Flourine_International from "../images/Navin_Flourine_International.jpg";
 import Aditya_Birla_Group_Logo from "../images/Aditya_Birla_Group_Logo.png";
-import gardenvareli from "../images/gardenvareli.png";
+import gardenvareli from "../images/ONGC_Logo.png";
 import furnacefabrica from "../images/furnacefabrica.png";
 export {
      certificate1,
