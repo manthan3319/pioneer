@@ -35,13 +35,17 @@ const Home_Contact = () => {
               <span className="text-customRed md:text-[40px]  text-[25px]">
                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
               </span>
-              <p className="text-gray-500 md:text-[20px] font-poppins text-[15px]  lg:text-[16px] xl:text-[27px]">
-                pioneer.scaffoldings@rediffmail.com
-              </p>
-              <p className="text-gray-500 md:text-[20px] font-poppins text-[15px]  lg:text-[16px] xl:text-[27px]">
-                info@pioneerscaffoldings.com
-              </p>
+              <div className="flex flex-col gap-[5px]">
+                <p className="text-gray-500 md:text-[20px] font-poppins text-[15px]  lg:text-[16px] xl:text-[27px]">
+                  pioneer.scaffoldings@rediffmail.com
+                </p>
+                <p className="text-gray-500 md:text-[20px] font-poppins text-[15px]  lg:text-[16px] xl:text-[27px]">
+                  info@pioneerscaffoldings.com
+                </p>
+              </div>
+
             </div>
+            
           </div>
         </div>
 
