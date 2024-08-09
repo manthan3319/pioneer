@@ -63,7 +63,7 @@ const Navbar = () => {
                   <span>
                     <i className="fa fa-envelope-o" aria-hidden="true"></i>
                   </span>
-                  pioneer.scaffoldings@rediffmail.com
+                  info@pioneerscaffoldings.com
                 </p>
               </div>
             </div>

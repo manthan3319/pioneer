@@ -24,19 +24,22 @@ const Home_Contact = () => {
 
             <div className="md:flex gap-[15px] items-center">
               <span className="text-customRed md:text-[40px] text-[30px]">
-              <i class="fa fa-phone" aria-hidden="true"></i>
+                <i class="fa fa-phone" aria-hidden="true"></i>
               </span>
               <p className="text-gray-500 md:text-[20px] font-poppins text-[17px]  lg:text-[16px] xl:text-[27px]">
-              +91 9328769174
+                +91 9328769174
               </p>
             </div>
 
             <div className="md:flex gap-[15px] items-center">
               <span className="text-customRed md:text-[40px]  text-[25px]">
-              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
               </span>
               <p className="text-gray-500 md:text-[20px] font-poppins text-[15px]  lg:text-[16px] xl:text-[27px]">
-              pioneer.scaffoldings@rediffmail.com
+                pioneer.scaffoldings@rediffmail.com
+              </p>
+              <p className="text-gray-500 md:text-[20px] font-poppins text-[15px]  lg:text-[16px] xl:text-[27px]">
+                info@pioneerscaffoldings.com
               </p>
             </div>
           </div>
@@ -45,10 +48,10 @@ const Home_Contact = () => {
         <div className="lg:w-[48%] w-[100%] md:w-[100%]">
           <div
             className="relative  bg-cover bg-center bg-no-repeat py-[50px] md:px-[50px] px-[20px] "
-            // style={{
-            //   backgroundImage: `url(${help})`,
-            //   minHeight: "100%",
-            // }}
+          // style={{
+          //   backgroundImage: `url(${help})`,
+          //   minHeight: "100%",
+          // }}
           >
             <div className="absolute inset-0 bg-[#727272c7] opacity-90"></div>
 
