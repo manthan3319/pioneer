@@ -28,9 +28,12 @@ const Navbar = () => {
     { id: 2, name: "About", link: "/about" },
     { id: 3, name: "Services", link: "/services" },
     { id: 4, name: "Clients", link: "/clients" },
-    // { id: 5, name: "Machinery", link: "/machinery" },
-    { id: 6, name: "Gallery", link: "/gallery" }
+    { id: 6, name: "Gallery", link: "/gallery" },
   ];
+
+  const handleLinkClick = () => {
+    toggleDrawer(); // Close the drawer when a link is clicked
+  };
 
   return (
     <>
@@ -73,11 +76,11 @@ const Navbar = () => {
         <div className="lg:max-w-[1440px] m-auto px-[20px]">
           <div className="flex items-center justify-between py-[10px]">
             <div>
-              <img
+            <Link to="/"> <img
                 src={logo}
                 alt="logo"
                 className="lg:w-[300px] md:w-[200px]"
-              />
+              /> </Link>
             </div>
 
             <div>
@@ -113,7 +116,7 @@ const Navbar = () => {
       <div className="md:hidden block mobile_slider">
         <div className="flex justify-between items-center sm:px-[30px] px-[20px]">
           <div>
-            <img src={logo} alt="logo" className="w-[216px]" />
+            <Link to="/"><img src={logo} alt="logo" className="w-[216px]" /></Link>
           </div>
           <div>
             <button onClick={toggleDrawer} className="text-[28px]">
@@ -138,6 +141,7 @@ const Navbar = () => {
                   >
                     <NavLink
                       to={item.link}
+                      onClick={handleLinkClick} // Close drawer on click
                       className={({ isActive }) =>
                         isActive ? "active-link" : "nav-link"
                       }

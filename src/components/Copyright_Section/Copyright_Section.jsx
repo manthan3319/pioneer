@@ -63,7 +63,7 @@ const Copyright_Section = () => {
 
           <div className="md:w-[20%] mt-[35px] md:mt-[0px]">
             <h1 className="text-[20px] font-Oxanium font-bold mb-[20px] text-customRed">Other Link</h1>
-            <ul className="list-none p-0">
+            {/* <ul className="list-none p-0">
               {NavbarMenu2.map((item) => (
                 <li key={item.id} className="mb-[10px]">
                   <a href={item.link} className="text-gray-800 hover:text-customRed font-poppins" download>
@@ -71,7 +71,7 @@ const Copyright_Section = () => {
                   </a>
                 </li>
               ))}
-            </ul>
+            </ul> */}
             <Link className="bg-customBlue text-white py-[5px] px-[10px] mt-[10px] inline-block font-Oxanium rounded-[4px]">Group Companies</Link>
           </div>
         </div>
