@@ -47,7 +47,7 @@ const Home_About = () => {
           <div className="absolute bg-customRed text-center bottom-0 p-[35px] border-[10px] border-white hidden lg:block">
             <h1 className="text-[50px] font-Oxanium text-white font-bold">
               {inView ? (
-                <CountUp start={0} end={13} duration={2.75} suffix="+" />
+                <CountUp start={0} end={12} duration={2.75} suffix="+" />
               ) : (
                 "0+"
               )}

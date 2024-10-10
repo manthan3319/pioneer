@@ -38,20 +38,18 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`navbar-container navbar_section ${
-          isFixed ? "fixed-navbar animate-navbar" : ""
-        } md:block hidden`}
+        className={`navbar-container navbar_section ${isFixed ? "fixed-navbar animate-navbar" : ""
+          } md:block hidden`}
       >
         <div className="bg-black py-[10px]">
           <div className="lg:max-w-[1440px] m-auto px-[20px]">
             <div className="flex items-center justify-between md:flex-col lg:flex-row md:gap-[10px]">
               <div>
                 <p className="text-white xl:text-[14px] lg:text-[13px] flex gap-[10px] 2xl:text-[14px] font-poppins">
-                  <span>
+                  {/* <span>
                     <i className="fa fa-map-marker" aria-hidden="true"></i>
-                  </span>
-                  1004 Icon Business Center, Opp Central Mall, Piplod, Surat,
-                  Gujarat 395007
+                  </span> */}
+                  AN ISO 9001:2015 | ISO 45001 : 2018 CERTIFIED COMPANY
                 </p>
               </div>
 
@@ -76,7 +74,7 @@ const Navbar = () => {
         <div className="lg:max-w-[1440px] m-auto px-[20px]">
           <div className="flex items-center justify-between py-[10px]">
             <div>
-            <Link to="/"> <img
+              <Link to="/"> <img
                 src={logo}
                 alt="logo"
                 className="lg:w-[300px] md:w-[200px]"
