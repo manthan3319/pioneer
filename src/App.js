@@ -13,20 +13,9 @@ const Gallery = lazy(() => import('./components/Gallery/Gallery'));
 const Contactus = lazy(() => import('./components/Contactus/Contactus'));
 
 const App = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    // This effect will run once when the component mounts
-    // We're not changing the loading state, so it will always stay true
-  }, []);
-
   return (
     <BrowserRouter>
       <Navbar />
-      {isLoading ? (
-        <Loader />
-      ) : (
-        <Suspense fallback={<Loader />}>
           <Routes>
             <Route index element={<Home />} />
             <Route path="about" element={<AboutUs />} />
@@ -35,8 +24,6 @@ const App = () => {
             <Route path="gallery" element={<Gallery />} />
             <Route path="contactus" element={<Contactus />} />
           </Routes>
-        </Suspense>
-      )}
       <Copyright_Section/>
     </BrowserRouter>
   );
